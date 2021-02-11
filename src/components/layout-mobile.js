@@ -27,17 +27,7 @@ const StyledFooter = styled.footer`
   margin-top: 2rem;
   background-color: #f0f0f0;
 `
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const LayoutMobile = ({ children }) => {
   return (
     <>
       <Header />
@@ -49,8 +39,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+LayoutMobile.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutMobile

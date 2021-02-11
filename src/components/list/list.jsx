@@ -1,66 +1,55 @@
 import React from "react"
 import styled from "styled-components"
+import myTheme from "../../styles/myTheme"
+import Circles from "./circles"
 
 const StyledList = styled.div`
-  width: 250px;
-  margin: auto;
+  width: auto;
+  margin: 1rem;
 `
 
 const StyledListPoint = styled.div`
   display: flex;
   position: relative;
-  border-left: 2px solid blue;
+  border-left: 2px solid ${myTheme.color.button};
 `
 const StyledBullet = styled.div`
   position: absolute;
   left: -1rem;
-  /* align-self: center; */
-  background-color: grey;
   justify-self: center;
-  /* padding: auto; */
   width: 2rem;
   height: 2rem;
+  /* box-shadow: 3px 3px 5px grey; */
+  border-radius: 50%;
 `
+
 const StyledTextBox = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
+  margin-bottom: 2rem;
+  width: 72%;
 `
 
-const StyledHeading = styled.h2``
+const StyledHeading = styled.h2`
+  text-transform: uppercase;
+`
 const StyledText = styled.p`
   &:last-child {
     margin: 0;
   }
 `
 
-const items = [
-  {
-    title: "one",
-    text: "Some text if this gonan be much lnger whats gonan happen",
-  },
-  {
-    title: "two",
-    text: "Some text if this gonan be much lnger whats gonan happen",
-  },
-  {
-    title: "three",
-    text: "Some text if this gonan be much lnger whats gonan happen",
-  },
-  {
-    title: "four",
-    text: "Some text if this gonan be much lnger whats gonan happen",
-  },
-]
-
-const List = ({}) => {
+const List = ({ list }) => {
   return (
     <StyledList>
-      {items.map(item => (
-        <StyledListPoint>
-          <StyledBullet />
+      {list.map(item => (
+        <StyledListPoint key={item.header}>
+          <StyledBullet>
+            <Circles />
+          </StyledBullet>
           <StyledTextBox>
-            <StyledHeading>{item.title}</StyledHeading>
+            <StyledHeading>{item.header}</StyledHeading>
             <StyledText>{item.text}</StyledText>
           </StyledTextBox>
         </StyledListPoint>
