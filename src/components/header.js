@@ -7,7 +7,7 @@ import Apple from "../images/svg/apple.svg"
 import ImageLogo from "./imageLogo"
 
 const StyledHeader = styled.header`
-  background-color: white;
+  background-color: #f0f0f0;
   margin-bottom: 1.45rem;
 `
 const StyledLogoWrapper = styled.div`
@@ -16,7 +16,7 @@ const StyledLogoWrapper = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const StyledLogo = styled.h1`
+const StyledLogo = styled.h2`
   margin: 0;
 `
 
@@ -28,11 +28,11 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `Blue`,
+            color: `aqua-blue`,
             textDecoration: `none`,
           }}
         >
-          {/* siteTitle */}
+          {siteTitle}
         </Link>
       </StyledLogo>
     </StyledLogoWrapper>
