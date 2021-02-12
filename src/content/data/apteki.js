@@ -16,7 +16,11 @@ export const online = [
     href:
       "https://www.aptekaolmed.pl/product-pol-93879-TENfertil-ON-120-kapsulek.html?text:tenfertil",
   },
-  { name: "radomska", href: "" },
+  {
+    name: "radomska",
+    href:
+      "https://allegro.pl/oferta/tenfertil-on-120-kapsulek-nowosc-na-nasienie-10167488690",
+  },
   {
     name: "rosa",
     href:
