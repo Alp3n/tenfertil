@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import PropTypes from "prop-types"
 
 import { useMediaQuery } from "react-responsive"
 
@@ -32,7 +31,7 @@ const StyledHeaderBig = styled.div`
   background-color: #f0f0f0;
 `
 
-const Header = ({}) => {
+const Header = () => {
   const [isVisible, setVisible] = useState(false)
   const isBigScreen = useMediaQuery({ query: "(min-width:1201px)" })
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" })
@@ -68,14 +67,6 @@ const Header = ({}) => {
       />
     </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

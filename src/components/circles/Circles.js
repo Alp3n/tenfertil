@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
-import Img from "gatsby-image"
 
 const circles = [
   {

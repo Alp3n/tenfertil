@@ -12,7 +12,7 @@ const StyledWrapper = styled.div`
   margin-top: 3rem;
 `
 const Styled50 = styled.div`
-  width: 50%;
+  width: 55%;
 `
 
 const BuyDesktop = () => {

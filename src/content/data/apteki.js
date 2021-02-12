@@ -1,5 +1,8 @@
 export const online = [
-  { name: "aptekarnia", href: "https://aptekarnia.com/" },
+  {
+    name: "aptekaria",
+    href: "https://aptekaria.pl/tenfertil-on-wsparcie-meskiej-plodnosci",
+  },
   {
     name: "główna",
     href: "https://www.aptekaglowna.pl/tenfertil-on-120-kaps.html",

@@ -1,14 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Link } from "gatsby"
 import Nav from "./nav"
-
-const links = [
-  { href: "/somewhere", name: "Somewhere" },
-  { href: "/somewhere2", name: "Somewhere2" },
-  { href: "/somewhere3", name: "Somewhere3" },
-]
 
 const StyledMenuWrapper = styled.div`
   position: absolute;

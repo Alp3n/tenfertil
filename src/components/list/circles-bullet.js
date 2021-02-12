@@ -56,7 +56,7 @@ const StyledBackground = styled.div`
   border-radius: 100%;
 `
 
-const Circles = () => {
+const CirclesBullet = () => {
   return (
     <StyledCirclesWrapper>
       <StyledCircle />
@@ -74,4 +74,4 @@ const Circles = () => {
   )
 }
 
-export default Circles
+export default CirclesBullet

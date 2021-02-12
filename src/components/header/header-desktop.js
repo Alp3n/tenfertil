@@ -15,14 +15,11 @@ const StyledHeader = styled.header`
   margin-left: 5%;
 `
 
-const HeaderDesktop = ({}) => {
+const HeaderDesktop = () => {
   return (
     <StyledHeader>
       <Logo width="200px" />
-      <Nav
-        flex="flex"
-        //links
-      />
+      <Nav flex="flex" />
     </StyledHeader>
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
 import Button from "../button/button"
-import Circles from "./circles"
+import CirclesBullet from "./circles-bullet"
 
 const StyledList = styled.div`
   width: auto;
@@ -45,10 +45,10 @@ const List = ({ list, online, offline }) => {
     <StyledList>
       {list.map(item => (
         <StyledListPoint
-          key={online ? item.name : offline ? item.name : item.header}
+          key={online ? item.name : offline ? item.address : item.header}
         >
           <StyledBullet>
-            <Circles />
+            <CirclesBullet />
           </StyledBullet>
           {online ? (
             <StyledTextBox>

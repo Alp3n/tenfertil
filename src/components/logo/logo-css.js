@@ -22,7 +22,7 @@ const circles = [
   },
 ]
 
-const StyledIconWrapper = styled(Link)`
+const StyledIconWrapper = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -54,7 +54,7 @@ const StyledText = styled.span`
 
 const LogoCss = ({ companyName }) => {
   return (
-    <StyledIconWrapper to="#">
+    <StyledIconWrapper href="http://nhinstitute.pl" target={"_blank"}>
       <StyledCircleWrapper>
         {circles.map(circle => (
           <StyledCircle

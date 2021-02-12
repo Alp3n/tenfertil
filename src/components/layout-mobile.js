@@ -6,8 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header/header"
@@ -37,10 +35,6 @@ const LayoutMobile = ({ children }) => {
       <StyledFooter>© {new Date().getFullYear()} Nhinstitute</StyledFooter>
     </>
   )
-}
-
-LayoutMobile.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default LayoutMobile

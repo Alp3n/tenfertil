@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import myTheme from "../../styles/myTheme"
 
 const links = [
-  { href: "#about", name: "O TENFERTIL" },
-  { href: "#facts", name: "FAKTY I PORADY" },
+  { href: "/#about", name: "O TENFERTIL" },
+  { href: "/#facts", name: "FAKTY I PORADY" },
   { href: "#footer", name: "KONTAKT" },
 ]
 

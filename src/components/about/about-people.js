@@ -1,10 +1,9 @@
 import React from "react"
-import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import PersonPortrait from "../circles/person-portrait"
 import Button from "../button/button"
 
-const AboutPeople = ({}) => {
+const AboutPeople = () => {
   const data = useStaticQuery(graphql`
     query People($regex: String = "people/") {
       people: allMdx(

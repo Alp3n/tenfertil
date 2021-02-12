@@ -26,14 +26,15 @@ const Product = props => {
       }
     }
   `)
-
+  console.log("PRODUCT: ")
   return (
     <StyledWrapper {...props}>
       <StyledImg
         fluid={data.imageLogoSmall.childImageSharp.fluid}
         width={`600px`}
       />
-      <Button to={`/buy`} label={`KUP`} />
+
+      <Button to={`/buy`} label="KUP" />
     </StyledWrapper>
   )
 }

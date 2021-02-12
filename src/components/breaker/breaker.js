@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   height: auto;
   padding: 5rem 0;
-  background-color: ${myTheme.color["portrait-1"]};
+  background-color: ${myTheme.color["portrait-2"]};
   white-space: pre-wrap;
 `
 

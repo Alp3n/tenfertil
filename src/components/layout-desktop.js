@@ -1,35 +1,17 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import List from "./list/list"
-import GalleryDesktop from "./gallery/gallery-desktop"
 import HeaderDesktop from "./header/header-desktop"
 import Product from "./product/product"
 
 import "./layout.css"
-import Title from "./gallery/title"
 
-import Breaker from "./breaker/breaker"
-import Tips from "./circles/tips"
-
-import LeftBorderP from "./paragraph/left-border-paragraph"
-import AboutTenfertil from "./about/about-tenfertil"
 import FooterDesktop from "./footer/footer-desktop"
-import AboutPeople from "./about/about-people"
-
-import { porady } from "../content/data/porady"
-import { facts } from "../content/data/facts"
 
 const StyledLayout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-`
-
-const StyledWrapperBig = styled.div`
-  display: flex;
-  flex-direction: column;
 `
 
 const FixedProduct = styled.div`
@@ -44,10 +26,6 @@ const StyledRight = styled.div`
   flex-direction: column;
   align-items: flex-end;
   margin-top: 2rem;
-`
-
-const Styled50 = styled.div`
-  width: 55%;
 `
 
 const LayoutDesktop = ({ children }) => {
