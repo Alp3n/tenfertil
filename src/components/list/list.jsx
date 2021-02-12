@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
+import Button from "../button/button"
 import Circles from "./circles"
 
 const StyledList = styled.div`
@@ -19,7 +20,6 @@ const StyledBullet = styled.div`
   justify-self: center;
   width: 2rem;
   height: 2rem;
-  /* box-shadow: 3px 3px 5px grey; */
   border-radius: 50%;
 `
 
@@ -40,18 +40,32 @@ const StyledText = styled.p`
   }
 `
 
-const List = ({ list }) => {
+const List = ({ list, online, offline }) => {
   return (
     <StyledList>
       {list.map(item => (
-        <StyledListPoint key={item.header}>
+        <StyledListPoint
+          key={online ? item.name : offline ? item.name : item.header}
+        >
           <StyledBullet>
             <Circles />
           </StyledBullet>
-          <StyledTextBox>
-            <StyledHeading>{item.header}</StyledHeading>
-            <StyledText>{item.text}</StyledText>
-          </StyledTextBox>
+          {online ? (
+            <StyledTextBox>
+              <StyledHeading>apteka {item.name}</StyledHeading>
+              <Button href={item.href} label={`KUP`} />
+            </StyledTextBox>
+          ) : offline ? (
+            <StyledTextBox>
+              <StyledHeading>apteka {item.name}</StyledHeading>
+              <StyledText>{item.address}</StyledText>
+            </StyledTextBox>
+          ) : (
+            <StyledTextBox>
+              <StyledHeading>{item.header}</StyledHeading>
+              <StyledText>{item.text}</StyledText>
+            </StyledTextBox>
+          )}
         </StyledListPoint>
       ))}
     </StyledList>

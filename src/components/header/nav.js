@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import myTheme from "../../styles/myTheme"
 
 const links = [
-  { href: "/somewhere", name: "O TENFERTIL" },
-  { href: "/somewhere2", name: "FAKTY I PORADY" },
-  { href: "/somewhere3", name: "KONTAKT" },
+  { href: "#about", name: "O TENFERTIL" },
+  { href: "#facts", name: "FAKTY I PORADY" },
+  { href: "#footer", name: "KONTAKT" },
 ]
 
 const StyledList = styled.ul`
@@ -17,14 +18,16 @@ const StyledList = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: ${myTheme.color.button};
 
   &:visited {
-    color: blue;
+    color: ${myTheme.color.button};
   }
 
-  .active {
-    color: red;
+  &:hover {
+    color: ${myTheme.color["blue-4"]};
   }
 `
 
@@ -39,9 +42,7 @@ const Nav = props => {
       <StyledList {...props}>
         {links.map(link => (
           <StyledListPoint key={link.href}>
-            <StyledLink to={link.href} activeClassName={`active`}>
-              {link.name}
-            </StyledLink>
+            <StyledLink to={link.href}>{link.name}</StyledLink>
           </StyledListPoint>
         ))}
       </StyledList>

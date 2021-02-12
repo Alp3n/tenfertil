@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `TenFertil`,
-    description: `Suplement diety dla mężczyzn starających się o dzieci.`,
-    author: `adamwalukiewicz.dev`,
+    title: `TenFertil On`,
+    description: ` TenFertil On to suplement diety dla mężczyzn starających się o dzieci.`,
+    author: `nhinstitute.pl`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +27,14 @@ module.exports = {
         path: `${__dirname}/src/images/jpg`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `people`,
+        path: `${__dirname}/src/content/people`,
+      },
+    },
+    { resolve: `gatsby-plugin-mdx`, extenstions: [`.mdx`, `.md`] },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

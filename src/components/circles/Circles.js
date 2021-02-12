@@ -29,8 +29,8 @@ const circles = [
 
 const StyledCirclesWrapper = styled.div`
   display: flex;
-  height: 200px;
-  width: 200px;
+  height: 260px;
+  width: 260px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const StyledHeader = styled.h3`
+const StyledHeader = styled.h2`
   text-transform: uppercase;
 `
 

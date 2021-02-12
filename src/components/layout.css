@@ -12,6 +12,7 @@ body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: "Lato";
   font-weight: normal;
+  color: #151070;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -85,8 +86,9 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 2.45rem;
   line-height: 1.1;
+  white-space: pre-wrap;
 }
 mark {
   background-color: #ff0;
@@ -262,7 +264,7 @@ h2 {
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
@@ -398,6 +400,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1rem;
+  font-weight: 300;
+  white-space: pre-wrap;
 }
 pre {
   margin-left: 0;

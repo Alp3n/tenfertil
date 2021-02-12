@@ -2,12 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import myTheme from "../../styles/myTheme"
+import Button from "../button/button"
 
 const StyledImg = styled(Img)`
   min-width: ${props => props.width};
-  /* box-shadow: 10px 10px 50px grey; */
-  /* height: auto; */
 `
 
 const StyledWrapper = styled.div`
@@ -16,18 +14,6 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const StyledButton = styled.button`
-  margin-top: 2rem;
-  height: 58px;
-  width: 80%;
-  border: none;
-  background-color: ${myTheme.color.button};
-  color: ${myTheme.color.white};
-
-  &:hover {
-    background-color: ${myTheme.color["blue-4"]};
-  }
-`
 const Product = props => {
   const data = useStaticQuery(graphql`
     query {
@@ -45,9 +31,9 @@ const Product = props => {
     <StyledWrapper {...props}>
       <StyledImg
         fluid={data.imageLogoSmall.childImageSharp.fluid}
-        width={`400px`}
+        width={`600px`}
       />
-      <StyledButton>KUP</StyledButton>
+      <Button to={`/buy`} label={`KUP`} />
     </StyledWrapper>
   )
 }

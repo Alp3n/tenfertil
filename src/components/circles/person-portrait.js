@@ -29,8 +29,8 @@ const circles = [
 
 const StyledPortraitWrapper = styled.div`
   display: flex;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10%;
-  max-width: 40%;
+  max-width: 50%;
 `
 
 const StyledWrapper = styled.div`
@@ -91,7 +91,7 @@ const PersonPortrait = ({ image, header, text }) => {
       </StyledPortraitWrapper>
       <StyledContent>
         <StyledHeader>{header}</StyledHeader>
-        <StyledP>{text}</StyledP>
+        <StyledP>{text.map(text => text)}</StyledP>
       </StyledContent>
     </StyledWrapper>
   )
