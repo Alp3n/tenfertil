@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
 
-import { Link } from "gatsby"
-
 const circles = [
   {
     color: myTheme.color["blue-2"],

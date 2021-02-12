@@ -54,10 +54,7 @@ const Header = () => {
         <StyledHeader>
           <StyledHeaderBig>
             <Logo width="200px" />
-            <Nav
-              flex="flex"
-              //links
-            />
+            <Nav flex="flex" />
           </StyledHeaderBig>
         </StyledHeader>
       )}

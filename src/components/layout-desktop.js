@@ -33,7 +33,7 @@ const LayoutDesktop = ({ children }) => {
     <StyledLayout>
       <HeaderDesktop />
       <FixedProduct>
-        <Product />
+        <Product width="600px" />
       </FixedProduct>
       <StyledRight>{children}</StyledRight>
 

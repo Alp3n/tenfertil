@@ -29,7 +29,6 @@ const StyledButtonHref = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
   height: 58px;
   min-width: 250px;
   max-width: 300px;

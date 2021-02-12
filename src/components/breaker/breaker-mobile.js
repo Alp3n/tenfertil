@@ -5,32 +5,32 @@ import myTheme from "../../styles/myTheme"
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
   width: 100%;
-  height: auto;
-  padding: 5rem 0;
+  margin: 2rem 0;
+  padding: 3rem 0;
   background-color: ${myTheme.color["portrait-2"]};
   white-space: pre-wrap;
+  padding: 1.5rem;
 `
 
-const Styled50 = styled.div`
-  width: 50%;
-  margin-right: 5%;
-  z-index: 666;
+const StyledH1 = styled.h1`
+  font-size: 2rem;
+  margin: 1rem 0;
+`
+const StyledH2 = styled.h2`
+  font-size: 1.25rem;
 `
 
-const Breaker = ({ heading, texts, id }) => {
+const BreakerMobile = ({ heading, texts, id }) => {
   return (
     <StyledWrapper id={id}>
-      <Styled50>
-        <h1>{heading}</h1>
-        {texts.map(text => (
-          <h2 key={text}>{text}</h2>
-        ))}
-      </Styled50>
+      <StyledH1>{heading}</StyledH1>
+      {texts.map(text => (
+        <StyledH2 key={text}>{text}</StyledH2>
+      ))}
     </StyledWrapper>
   )
 }
 
-export default Breaker
+export default BreakerMobile

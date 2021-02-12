@@ -16,9 +16,11 @@ import { facts } from "../../content/data/facts"
 const StyledGalleryWrapper = styled.div`
   width: 55%;
   padding-right: 5%;
+  z-index: 999;
 `
 const Styled50 = styled.div`
   width: 55%;
+  z-index: 999;
 `
 
 const HomeDesktop = () => {
@@ -51,7 +53,7 @@ const HomeDesktop = () => {
         ]}
       />
       <Styled50>
-        <Tips list={porady} />
+        <Tips list={porady} width="260px" />
       </Styled50>
       <Breaker
         heading={`Nutrition Health Institute`}

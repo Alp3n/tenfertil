@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive"
 import LayoutDesktop from "../components/layout-desktop"
 import LayoutMobile from "../components/layout-mobile"
 import HomeDesktop from "../components/pages/home-desktop"
+import HomeMobile from "../components/pages/home-mobile"
 
 import SEO from "../components/seo"
 
@@ -18,7 +19,11 @@ const IndexPage = () => {
           <HomeDesktop />
         </LayoutDesktop>
       )}
-      {isTabletOrMobile && <LayoutMobile></LayoutMobile>}
+      {isTabletOrMobile && (
+        <LayoutMobile>
+          <HomeMobile />
+        </LayoutMobile>
+      )}
     </>
   )
 }

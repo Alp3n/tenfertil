@@ -28,7 +28,7 @@ const StyledTextBox = styled.div`
   flex-direction: column;
   margin-left: 3rem;
   margin-bottom: 2rem;
-  width: 72%;
+  width: 90%;
 `
 
 const StyledHeading = styled.h2`

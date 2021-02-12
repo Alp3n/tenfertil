@@ -1,11 +1,18 @@
 import React from "react"
+import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
-import PersonPortrait from "./person-portrait"
+import PersonPortraitMobile from "./person-portrait-mobile"
 import Button from "../button/button"
 
-const AboutPeople = () => {
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const AboutPeopleMobile = () => {
   const data = useStaticQuery(graphql`
-    query People($regex: String = "people/") {
+    query PeopleMobile($regex: String = "people/") {
       people: allMdx(
         filter: { frontmatter: { slug: { regex: $regex } } }
         sort: { fields: frontmatter___myid, order: ASC }
@@ -33,25 +40,19 @@ const AboutPeople = () => {
       }
     }
   `)
+
   return (
-    <>
+    <StyledWrapper>
       {data.people.edges.map(person => (
-        <PersonPortrait
+        <PersonPortraitMobile
           key={person.node.id}
           image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
           text={person.node.frontmatter.titles}
           header={person.node.frontmatter.name}
         />
       ))}
-      <div
-        style={{ display: `flex`, marginLeft: `3rem`, marginBottom: `3rem` }}
-      >
-        <Button
-          href={`http://www.nhinstitute.pl`}
-          label={`dowiedz się więcej`}
-        />
-      </div>
-    </>
+      <Button href={`http://www.nhinstitute.pl`} label={`dowiedz się więcej`} />
+    </StyledWrapper>
   )
 }
-export default AboutPeople
+export default AboutPeopleMobile

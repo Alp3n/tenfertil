@@ -11,7 +11,7 @@ const StyledFooterWrapper = styled.footer`
   justify-content: center;
   width: 100%;
   padding: 3rem 0;
-  background-color: ${myTheme.color["portrait-1"]};
+  background-color: ${myTheme.color["portrait-2"]};
 `
 
 const StyledContect = styled.div`

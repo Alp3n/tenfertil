@@ -1,17 +1,17 @@
 import React from "react"
 import styled from "styled-components"
+import myTheme from "../../styles/myTheme"
 
 import Nav from "./nav"
 
 const StyledMenuWrapper = styled.div`
   position: absolute;
   background-color: white;
-  display: flex;
   width: 100%;
   flex-direction: column;
   display: ${props => (props.isVisible ? "block" : "none")};
-
-  z-index: 2;
+  top: 3.25rem;
+  z-index: 1;
 
   .opened {
     animation: fadeOut ease 0.35s;
@@ -39,10 +39,10 @@ const StyledMenuWrapper = styled.div`
   }
 `
 const StyledBreak = styled.div`
-  margin-left: 1.0875rem;
-  margin-right: 1.0875rem;
-  margin-bottom: 1.45rem;
-  border-bottom: 1px solid blue;
+  margin: 0 1rem 1rem 1rem;
+  /* margin-right: 1rem;
+  margin-bottom: 1.45rem; */
+  border-bottom: 1px solid ${myTheme.color["blue-4"]};
 `
 
 const Menu = (props, { isVisible }) => {

@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive"
 import LayoutDesktop from "../components/layout-desktop"
 import LayoutMobile from "../components/layout-mobile"
 import BuyDesktop from "../components/pages/buy-desktop"
+import BuyMobile from "../components/pages/buy-mobile"
 
 import SEO from "../components/seo"
 
@@ -17,7 +18,11 @@ const SecondPage = () => {
           <BuyDesktop />
         </LayoutDesktop>
       )}
-      {isTabletOrMobile && <LayoutMobile />}
+      {isTabletOrMobile && (
+        <LayoutMobile>
+          <BuyMobile />
+        </LayoutMobile>
+      )}
     </>
   )
 }

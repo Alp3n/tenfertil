@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const Product = props => {
+const Product = ({ width, buttonOff }) => {
   const data = useStaticQuery(graphql`
     query {
       imageLogoSmall: file(name: { eq: "tenfertil" }) {
@@ -26,15 +26,14 @@ const Product = props => {
       }
     }
   `)
-  console.log("PRODUCT: ")
   return (
-    <StyledWrapper {...props}>
+    <StyledWrapper>
       <StyledImg
         fluid={data.imageLogoSmall.childImageSharp.fluid}
-        width={`600px`}
+        width={width}
+        // max-width={`600px`}
       />
-
-      <Button to={`/buy`} label="KUP" />
+      {buttonOff ? null : <Button to={`/buy`} label="KUP" />}
     </StyledWrapper>
   )
 }

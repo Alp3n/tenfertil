@@ -1,13 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import { GrMenu, GrClose } from "react-icons/gr"
+import myTheme from "../../styles/myTheme"
 
 const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.45rem 1.0875rem;
+  /* margin: 0 1.0875rem; */
   border: none;
+  background-color: transparent;
 
   .opened {
     animation: fadeOut ease 0.35s;
@@ -41,7 +43,11 @@ const MenuButton = ({ handleClick, isVisible }) => {
       onClick={() => handleClick()}
       className={isVisible ? "opened" : "closed"}
     >
-      {isVisible ? <GrClose size="24px" /> : <GrMenu size="24px" />}
+      {isVisible ? (
+        <GrClose size="24px" color={myTheme.color["blue-4"]} />
+      ) : (
+        <GrMenu size="24px" color={myTheme.color["blue-4"]} />
+      )}
     </StyledButton>
   )
 }
