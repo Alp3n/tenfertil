@@ -7,10 +7,12 @@ const StyledWrapper = styled.div`
 `
 
 const StyledP = styled.p`
+  font-size: 18px;
   margin-bottom: 0 !important;
 `
 
 const StyledH1 = styled.h1`
+  font-size: 48px;
   margin: 0;
 `
 

@@ -5,8 +5,8 @@ import Button from "../button/button"
 import CirclesBullet from "./circles-bullet"
 
 const StyledList = styled.div`
-  width: auto;
   margin: 1rem;
+  width: 80%;
 `
 
 const StyledListPoint = styled.div`
@@ -35,9 +35,12 @@ const StyledTextBox = styled.div`
 `
 
 const StyledHeading = styled.h2`
+  font-size: 22px;
+  font-weight: 700;
   text-transform: uppercase;
 `
 const StyledText = styled.p`
+  font-size: 18px;
   &:last-child {
     margin: 0;
   }

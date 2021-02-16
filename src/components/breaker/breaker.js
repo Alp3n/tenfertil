@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   height: auto;
   padding: 5rem 0;
-  background-color: ${myTheme.color["portrait-2"]};
+  background-color: ${myTheme.color.background};
   white-space: pre-wrap;
   margin: 2rem 0;
 `
@@ -21,14 +21,22 @@ const Styled50 = styled.div`
   z-index: 666;
 `
 
-const Breaker = ({ heading, texts, id }) => {
+const StyledH1 = styled.h1`
+  font-size: 48px;
+`
+const StyledH2 = styled.h2`
+  font-size: 30px;
+`
+
+const Breaker = ({ children, texts, heading, id }) => {
   return (
     <StyledWrapper id={id}>
       <Styled50>
-        <h1>{heading}</h1>
+        <StyledH1>{heading}</StyledH1>
         {texts.map(text => (
-          <h2 key={text}>{text}</h2>
+          <StyledH2 key={text}>{text}</StyledH2>
         ))}
+        {children}
       </Styled50>
     </StyledWrapper>
   )

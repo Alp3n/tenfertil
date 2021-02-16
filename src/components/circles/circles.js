@@ -5,14 +5,14 @@ import myTheme from "../../styles/myTheme"
 const circles = [
   {
     color: myTheme.color["portrait-1"],
-    left: "-40px",
+    left: "-30px",
     height: "100%",
     width: "100%",
     zIndex: 1,
   },
   {
     color: myTheme.color["portrait-2"],
-    left: "20px",
+    left: "10px",
     height: "100%",
     width: "100%",
     zIndex: 2,
@@ -20,8 +20,8 @@ const circles = [
   {
     color: myTheme.color["portrait-3"],
     left: "-10px",
-    height: "80%",
-    width: "80%",
+    height: "90%",
+    width: "90%",
     zIndex: 3,
   },
 ]
@@ -71,10 +71,13 @@ const StyledWrapper = styled.div`
 `
 
 const StyledHeader = styled.h2`
+  font-size: 28px;
   text-transform: uppercase;
 `
 
-const StyledP = styled.p``
+const StyledP = styled.p`
+  font-size: 22px;
+`
 
 const Circles = ({ image, text, header }) => {
   return (

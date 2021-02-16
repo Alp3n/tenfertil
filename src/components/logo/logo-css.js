@@ -50,7 +50,7 @@ const StyledText = styled.span`
 
 const LogoCss = ({ companyName }) => {
   return (
-    <StyledIconWrapper href="http://nhinstitute.pl" target={"_blank"}>
+    <StyledIconWrapper href="https://nhinstitute.pl" target={"_blank"}>
       <StyledCircleWrapper>
         {circles.map(circle => (
           <StyledCircle

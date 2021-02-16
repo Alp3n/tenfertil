@@ -11,7 +11,7 @@ const StyledFooterWrapper = styled.footer`
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
-  background-color: ${myTheme.color["portrait-2"]};
+  background-color: ${myTheme.color.background};
 `
 
 const StyledInfoWrapper = styled.div`
@@ -23,8 +23,6 @@ const StyledInfoWrapper = styled.div`
 
 const StyledContactWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
   margin: 1rem;
 `
 const StyledContactText = styled.div`
@@ -36,7 +34,7 @@ const StyledText = styled.p`
   font-size: 0.8rem;
   text-align: center;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 8px;
 `
 
 const StyledLink = styled(Link)`

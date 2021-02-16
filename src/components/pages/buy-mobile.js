@@ -18,23 +18,30 @@ const StyledMargin = styled.div`
   margin: 0 auto;
 `
 
+const StyledH2 = styled.h2`
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 36px;
+`
+
 const BuyDesktop = () => {
   return (
     <StyledWrapper>
       <Product width={`300px`} buttonOff />
       <BreakerMobile
-        heading={`Gdzie kupić TENfertil On?`}
+        heading={"Gdzie kupić TENfertil&reg;ON?"}
         texts={[
-          `Nasz suplement diety można znaleźć online\njak i w aptekach różnych miast`,
+          `Nasz suplement diety można znaleźć online jak i w aptekach różnych miast`,
         ]}
       />
       <StyledMargin>
-        <h1>On-Line:</h1>
+        <StyledH2>On-Line:</StyledH2>
         <List list={online} online />
 
-        <h1>Off-Line:</h1>
+        <StyledH2>Off-Line:</StyledH2>
         <List list={offline} offline />
       </StyledMargin>
+
       <Button to={`/`} label={`WRÓĆ`} />
     </StyledWrapper>
   )

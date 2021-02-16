@@ -6,14 +6,14 @@ import Img from "gatsby-image"
 const circles = [
   {
     color: myTheme.color["portrait-1"],
-    left: "-40px",
+    left: "-30px",
     height: "100%",
     width: "100%",
     zIndex: 1,
   },
   {
     color: myTheme.color["portrait-2"],
-    left: "20px",
+    left: "10px",
     height: "100%",
     width: "100%",
     zIndex: 2,
@@ -21,8 +21,8 @@ const circles = [
   {
     color: myTheme.color["portrait-3"],
     left: "-10px",
-    height: "80%",
-    width: "80%",
+    height: "90%",
+    width: "90%",
     zIndex: 3,
   },
 ]
@@ -34,7 +34,7 @@ const StyledPortraitWrapper = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 18px;
 `
 
 const StyledPortrait = styled(Img)`
@@ -64,15 +64,19 @@ const StyledContent = styled.div`
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1 1.5rem 1.5rem 1.5rem;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  /* margin-bottom: 30px; */
   align-items: center;
 `
 
-const StyledHeader = styled.h3`
+const StyledHeader = styled.h2`
+  font-size: 22px;
   text-transform: uppercase;
 `
 
-const StyledP = styled.p``
+const StyledP = styled.p`
+  font-size: 18px;
+`
 
 const PersonPortraitMobile = ({ image, header, text }) => {
   return (

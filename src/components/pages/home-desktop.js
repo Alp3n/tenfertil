@@ -40,7 +40,7 @@ const HomeDesktop = () => {
       </Styled50>
       <Breaker
         heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
-        texts={["Czy wiesz że?"]}
+        texts={["Czy wiesz, że?"]}
         id="facts"
       />
       <Styled50>
@@ -58,8 +58,8 @@ const HomeDesktop = () => {
       <Breaker
         heading={`Nutrition Health Institute`}
         texts={[
-          "Nutrition Health Institute to firma, która koncentruje się naopracowywaniu i wytwarzaniu najnowszej generacji wieloskładnikowych preparatów farmaceutycznych zarówno dla kobiet jak i dla mężczyzn, którzy pragną spełnić największe swoje marzenie – zostać szczęśliwymi rodzicami.",
-          "Nutrition Health Institute chcę pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania z najnowszej generacji wieloskładnikowym preparatem TENfertilON, który jest rekomendowany przez najlepszych w Polsce lekarzy- specjalistów zajmujących się leczeniem niepłonności.",
+          "Nutrition Health Institute to firma, która koncentruje się na opracowywaniu i wytwarzaniu najnowszej generacji wieloskładnikowych preparatów farmaceutycznych, zarówno dla kobiet jak i dla mężczyzn, którzy pragną spełnić swoje największe marzenie – zostać szczęśliwymi rodzicami.",
+          "Nutrition Health Institute chce pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania z najnowszej generacji wieloskładnikowym preparatem TENfertil ON, który jest rekomendowany przez najlepszych w Polsce lekarzy-specjalistów zajmujących się leczeniem niepłonności.",
         ]}
       />
       <Styled50>

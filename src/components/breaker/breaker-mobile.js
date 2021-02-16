@@ -9,17 +9,17 @@ const StyledWrapper = styled.div`
   width: 100%;
   margin: 2rem 0;
   padding: 3rem 0;
-  background-color: ${myTheme.color["portrait-2"]};
+  background-color: ${myTheme.color.background};
   white-space: pre-wrap;
   padding: 1.5rem;
 `
 
 const StyledH1 = styled.h1`
-  font-size: 2rem;
+  font-size: 28px;
   margin: 1rem 0;
 `
 const StyledH2 = styled.h2`
-  font-size: 1.25rem;
+  font-size: 20px;
 `
 
 const BreakerMobile = ({ heading, texts, id }) => {

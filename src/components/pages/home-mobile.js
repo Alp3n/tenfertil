@@ -29,25 +29,25 @@ const StyledMargin = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: 1rem auto;
+  /* width: 100%; */
+  margin: 1rem 24px;
 `
 
 const StyledH1 = styled.h1`
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 28px;
   margin: 2rem 0;
 `
 const StyledH2 = styled.h2`
-  font-size: 1.5rem;
+  font-size: 20px;
 `
 
 const StyledP = styled.p`
-  font-size: 0.8rem;
+  font-size: 12px;
 `
 
 const StyledP2 = styled.p`
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 400;
   width: 100%;
 `
@@ -82,7 +82,7 @@ const HomeDesktop = () => {
       <StyledCart to={"/buy"}>
         <CgShoppingCart size="24px" color={myTheme.color.white} />
       </StyledCart>
-      
+
       <StyledWrapper>
         <Logo width="280px" />
 
@@ -91,7 +91,7 @@ const HomeDesktop = () => {
         <Product width="300px" />
 
         <StyledMargin>
-          <StyledH2>
+          <StyledH2 id="about">
             Jest prostym, innowacyjnym, bezpiecznym, a przede wszystkim
             skutecznym sposobem wspierania zdrowia mężczyzny w wieku rozrodczym.
           </StyledH2>
@@ -140,7 +140,7 @@ const HomeDesktop = () => {
         <BreakerMobile
           heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
           texts={[
-            "Nic prostszego - zadbaj o siebie! przygotuj się do tego ważnego faktu pamiętając o naszych radach:",
+            "Nic prostszego - zadbaj o siebie! Przygotuj się do tego ważnego faktu pamiętając o naszych radach:",
           ]}
         />
 

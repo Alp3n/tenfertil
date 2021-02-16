@@ -9,17 +9,20 @@ const StyledWrapper = styled.div`
   border-left: 1px solid ${myTheme.color.button};
   white-space: pre-wrap;
 `
+const StyledP = styled.p`
+  font-size: 18px;
+`
 
 const LeftBorderP = ({ text }) => {
   return (
     <StyledWrapper>
-      <p>{text}</p>
-      <p>
+      <StyledP>{text}</StyledP>
+      <StyledP>
         Chcesz, aby twoje życie nabrało kolorytu i prawdziwego sensu? chcesz
         słyszeć jedno z piękniejszych słów – tata? Nic prostszego - postaraj się
         o potomstwo!
-      </p>
-      <p>
+      </StyledP>
+      <StyledP>
         Do tego jakże ważnego faktu musisz jednak odpowiednio się przygotować,
         zarówno pod względem mentalnym jak i fizycznym. Pamiętaj, że
         przygotowanie mężczyzny jest tak samo ważne, jak pomoc kobiecie w
@@ -27,10 +30,13 @@ const LeftBorderP = ({ text }) => {
         odgrywają kluczową rolę w procesie poczęcia. Zarówno odpowiedni styl
         życia przyszłego ojca oraz jego wiek mają wpływ na poczęcie zdrowego i
         upragnionego potomstwa.
-      </p>
-      <p>
-        Pomoże ci w tym <strong>TENfertil ON</strong>
-      </p>
+      </StyledP>
+      <StyledP>
+        Pomoże ci w tym{" "}
+        <strong>
+          TENfertil<sup>&reg;</sup>ON
+        </strong>
+      </StyledP>
     </StyledWrapper>
   )
 }

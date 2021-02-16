@@ -11,37 +11,35 @@ const StyledFooterWrapper = styled.footer`
   justify-content: center;
   width: 100%;
   padding: 3rem 0;
-  background-color: ${myTheme.color["portrait-2"]};
+  background-color: ${myTheme.color.background};
   margin-top: 10%;
 `
 
-const StyledContect = styled.div`
-  width: 50%;
+const StyledContent = styled.div`
+  width: 55%;
 `
 const StyledInfoWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  margin: 1rem 0;
 `
 
 const StyledContactWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
+  flex-direction: column;
+  margin-right: 5rem;
 `
 const StyledContactText = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 1rem;
 `
 const StyledText = styled.p`
+  padding-left: 1rem;
   margin: 0;
 `
 
 const FooterDesktop = ({ number, email, company }) => {
   return (
     <StyledFooterWrapper id="footer">
-      <StyledContect>
+      <StyledContent>
         <LogoCss companyName={`Nutrition Health Institute`} />
         <StyledInfoWrapper>
           <StyledContactWrapper>
@@ -62,8 +60,8 @@ const FooterDesktop = ({ number, email, company }) => {
             {company}
           </StyledText>
         </StyledInfoWrapper>
-        <StyledText>© {new Date().getFullYear()} Nhinstitute</StyledText>
-      </StyledContect>
+        <p>© {new Date().getFullYear()} Nhinstitute</p>
+      </StyledContent>
     </StyledFooterWrapper>
   )
 }

@@ -44,7 +44,7 @@ const GalleryDesktop = () => {
           id
           name
           childImageSharp {
-            fluid(quality: 45) {
+            fluid(quality: 60) {
               ...GatsbyImageSharpFluid
             }
           }
