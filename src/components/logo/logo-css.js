@@ -45,9 +45,7 @@ const StyledCircle = styled.div`
 
 const StyledText = styled.span`
   color: ${myTheme.color["blue-4"]};
-  font-size: 28px;
-  font-family: "Lato";
-  font-weight: 300;
+  font-size: 1.3rem;
 `
 
 const LogoCss = ({ companyName }) => {

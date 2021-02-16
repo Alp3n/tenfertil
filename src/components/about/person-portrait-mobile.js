@@ -34,6 +34,7 @@ const StyledPortraitWrapper = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 `
 
 const StyledPortrait = styled(Img)`
@@ -63,7 +64,7 @@ const StyledContent = styled.div`
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 1.5rem 1.5rem 1.5rem;
+  margin: 1 1.5rem 1.5rem 1.5rem;
   align-items: center;
 `
 

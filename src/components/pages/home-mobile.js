@@ -14,6 +14,9 @@ import Logo from "../logo/logo"
 import Product from "../product/product"
 import Button from "../button/button"
 
+import { CgShoppingCart } from "react-icons/cg"
+import myTheme from "../../styles/myTheme"
+
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,8 +34,8 @@ const StyledMargin = styled.div`
 
 const StyledH1 = styled.h1`
   text-align: center;
-  font-size: 2rem;
-  margin: 1rem 0;
+  font-size: 1.8rem;
+  margin: 2rem 0;
 `
 const StyledH2 = styled.h2`
   font-size: 1.5rem;
@@ -48,6 +51,22 @@ const StyledP2 = styled.p`
   width: 100%;
 `
 
+const StyledCart = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 25%;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: none;
+  padding: 0;
+
+  background-color: ${myTheme.color.button};
+  z-index: 999;
+`
+
 const subTitle = "Optymalne wsparcie\npłodności"
 const break1 = {
   heading: "Jesteś mężczyzną\ni planujesz zdrowe potomstwo?",
@@ -57,13 +76,15 @@ const HomeDesktop = () => {
   return (
     <>
       <GalleryMobile />
-
+      <StyledCart>
+        <CgShoppingCart size="24px" color={myTheme.color.white} />
+      </StyledCart>
       <StyledWrapper>
-        <Logo width="310px" />
+        <Logo width="280px" />
 
         <StyledH1>{subTitle}</StyledH1>
 
-        <Product width="350px" />
+        <Product width="300px" />
 
         <StyledMargin>
           <StyledH2>
@@ -110,7 +131,7 @@ const HomeDesktop = () => {
           <List list={facts} />
         </StyledMargin>
 
-        <Product width="350px" />
+        <Product width="300px" />
 
         <BreakerMobile
           heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}

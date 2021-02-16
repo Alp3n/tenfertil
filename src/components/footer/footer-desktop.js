@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
 import LogoCss from "../logo/logo-css"
-import { FaMobileAlt, FaRegEnvelope } from "react-icons/fa"
+import { CgSmartphone, CgMail } from "react-icons/cg"
 
 const StyledFooterWrapper = styled.footer`
   display: flex;
@@ -31,10 +31,10 @@ const StyledContactText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1rem;
 `
 const StyledText = styled.p`
   margin: 0;
-  padding: 0 1rem;
 `
 
 const FooterDesktop = ({ number, email, company }) => {
@@ -45,13 +45,13 @@ const FooterDesktop = ({ number, email, company }) => {
         <StyledInfoWrapper>
           <StyledContactWrapper>
             <StyledContactText>
-              <FaMobileAlt color={myTheme.color["blue-4"]} size="24px" />
+              <CgSmartphone color={myTheme.color["blue-4"]} size="24px" />
               <StyledText size={myTheme.typography["text-p"]}>
                 {number}
               </StyledText>
             </StyledContactText>
             <StyledContactText>
-              <FaRegEnvelope color={myTheme.color["blue-4"]} size="24px" />
+              <CgMail color={myTheme.color["blue-4"]} size="24px" />
               <StyledText size={myTheme.typography["text-p"]}>
                 {email}
               </StyledText>

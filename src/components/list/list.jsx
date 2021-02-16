@@ -13,6 +13,9 @@ const StyledListPoint = styled.div`
   display: flex;
   position: relative;
   border-left: 2px solid ${myTheme.color.button};
+  &:last-child {
+    border: none;
+  }
 `
 const StyledBullet = styled.div`
   position: absolute;
@@ -52,12 +55,12 @@ const List = ({ list, online, offline }) => {
           </StyledBullet>
           {online ? (
             <StyledTextBox>
-              <StyledHeading>apteka {item.name}</StyledHeading>
+              <StyledHeading>{item.name}</StyledHeading>
               <Button href={item.href} label={`KUP`} />
             </StyledTextBox>
           ) : offline ? (
             <StyledTextBox>
-              <StyledHeading>apteka {item.name}</StyledHeading>
+              <StyledHeading>{item.name}</StyledHeading>
               <StyledText>{item.address}</StyledText>
             </StyledTextBox>
           ) : (

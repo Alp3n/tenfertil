@@ -21,7 +21,7 @@ const StyledMargin = styled.div`
 const BuyDesktop = () => {
   return (
     <StyledWrapper>
-      <Product width={`400px`} buttonOff />
+      <Product width={`300px`} buttonOff />
       <BreakerMobile
         heading={`Gdzie kupić TENfertil On?`}
         texts={[

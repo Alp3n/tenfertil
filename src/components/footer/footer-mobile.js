@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
 import LogoCss from "../logo/logo-css"
-import { FaMobileAlt, FaRegEnvelope, FaArrowUp } from "react-icons/fa"
+import { CgSmartphone, CgMail, CgArrowUp } from "react-icons/cg"
 import { Link } from "gatsby"
 
 const StyledFooterWrapper = styled.footer`
@@ -17,13 +17,15 @@ const StyledFooterWrapper = styled.footer`
 const StyledInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;
+  /* margin: 0 auto; */
 `
 
 const StyledContactWrapper = styled.div`
   display: flex;
-  align-items: center;
-  margin: 1rem auto;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 1rem;
 `
 const StyledContactText = styled.div`
   display: flex;
@@ -57,13 +59,13 @@ const FooterMobile = ({ number, email, company }) => {
       <StyledInfoWrapper>
         <StyledContactWrapper>
           <StyledContactText>
-            <FaMobileAlt color={myTheme.color["blue-4"]} size="24px" />
+            <CgSmartphone color={myTheme.color["blue-4"]} size="24px" />
             <StyledText size={myTheme.typography["text-p"]}>
               {number}
             </StyledText>
           </StyledContactText>
           <StyledContactText>
-            <FaRegEnvelope color={myTheme.color["blue-4"]} size="24px" />
+            <CgMail color={myTheme.color["blue-4"]} size="24px" />
             <StyledText size={myTheme.typography["text-p"]}>{email}</StyledText>
           </StyledContactText>
         </StyledContactWrapper>
@@ -71,7 +73,7 @@ const FooterMobile = ({ number, email, company }) => {
       </StyledInfoWrapper>
       <StyledText>© {new Date().getFullYear()} Nhinstitute</StyledText>
       <StyledLink to={`/`}>
-        <FaArrowUp size={`34px`} color={`white`} />
+        <CgArrowUp size={`34px`} color={`white`} />
       </StyledLink>
     </StyledFooterWrapper>
   )

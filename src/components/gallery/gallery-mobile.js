@@ -39,7 +39,7 @@ const GalleryMobile = () => {
           id
           name
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 45) {
               ...GatsbyImageSharpFluid
             }
           }

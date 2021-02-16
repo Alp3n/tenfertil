@@ -6,6 +6,7 @@ import Button from "../button/button"
 
 const StyledImg = styled(Img)`
   min-width: ${props => props.width};
+  margin-bottom: 2rem;
 `
 
 const StyledWrapper = styled.div`
@@ -19,7 +20,7 @@ const Product = ({ width, buttonOff }) => {
     query {
       imageLogoSmall: file(name: { eq: "tenfertil" }) {
         childImageSharp {
-          fluid(quality: 90) {
+          fluid(quality: 1) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,9 +32,8 @@ const Product = ({ width, buttonOff }) => {
       <StyledImg
         fluid={data.imageLogoSmall.childImageSharp.fluid}
         width={width}
-        // max-width={`600px`}
       />
-      {buttonOff ? null : <Button to={`/buy`} label="KUP" />}
+      {buttonOff ? null : <Button to={`/buy`} label="GDZIE KUPIĆ" />}
     </StyledWrapper>
   )
 }
