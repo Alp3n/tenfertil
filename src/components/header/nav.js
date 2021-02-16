@@ -10,10 +10,12 @@ const links = [
 ]
 
 const StyledList = styled.ul`
-  display: ${props => props.flex};
   margin: 0;
   line-height: 1.45rem;
-  justify-content: space-between;
+
+  @media only screen and (min-width: 1201px) {
+    display: flex;
+  }
 `
 
 const StyledLink = styled(Link)`

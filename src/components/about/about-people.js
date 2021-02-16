@@ -1,7 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 import PersonPortrait from "./person-portrait"
-import Button from "../button/button"
+
+import myTheme from "../../styles/myTheme"
+
+const StyledWrapper = styled.div`
+  padding-left: 3rem;
+  border-left: 1px solid ${myTheme.color.button};
+`
 
 const AboutPeople = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +41,7 @@ const AboutPeople = () => {
     }
   `)
   return (
-    <>
+    <StyledWrapper>
       {data.people.edges.map(person => (
         <PersonPortrait
           key={person.node.id}
@@ -46,12 +53,9 @@ const AboutPeople = () => {
       <div
         style={{ display: `flex`, marginLeft: `3rem`, marginBottom: `3rem` }}
       >
-        <Button
-          href={`http://www.nhinstitute.pl`}
-          label={`dowiedz się więcej`}
-        />
+        
       </div>
-    </>
+    </StyledWrapper>
   )
 }
 export default AboutPeople

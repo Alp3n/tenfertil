@@ -46,8 +46,8 @@ const StyledLink = styled(Link)`
   justify-content: center;
   right: 0;
   bottom: 0;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   background-color: ${myTheme.color.button};
   text-decoration: none;
 `
@@ -73,7 +73,7 @@ const FooterMobile = ({ number, email, company }) => {
       </StyledInfoWrapper>
       <StyledText>© {new Date().getFullYear()} Nhinstitute</StyledText>
       <StyledLink to={`/`}>
-        <CgArrowUp size={`34px`} color={`white`} />
+        <CgArrowUp size={`24px`} color={`white`} />
       </StyledLink>
     </StyledFooterWrapper>
   )

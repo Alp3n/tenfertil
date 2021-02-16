@@ -18,7 +18,6 @@ const FixedProduct = styled.div`
   position: fixed;
   top: 20%;
   width: 50%;
-  z-index: 999;
 `
 
 const StyledRight = styled.div`

@@ -11,11 +11,10 @@ const StyledHeader = styled.header`
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   justify-content: space-between;
   align-items: center;
   top: 2rem;
-  margin-left: 5%;
 `
 
 const StyledBox = styled.div`
@@ -24,7 +23,7 @@ const StyledBox = styled.div`
   width: 40%;
   justify-content: space-between;
   align-items: center;
-  /* top: 2rem; */
+  padding-right: 1rem;
 `
 
 const HeaderDesktop = () => {
@@ -35,20 +34,18 @@ const HeaderDesktop = () => {
   }
 
   return (
-    <>
-      <StyledHeader>
-        <StyledBox>
-          <Logo width="200px" />
-          {openMenu ? (
-            <MenuButton handleClick={handleClick} isVisible={isVisible} />
-          ) : (
-            <Nav flex="flex" />
-          )}
-        </StyledBox>
+    <StyledHeader>
+      <StyledBox>
+        <Logo width="200px" />
+        {openMenu ? (
+          <MenuButton handleClick={handleClick} isVisible={isVisible} />
+        ) : (
+          <Nav flex="flex" />
+        )}
+      </StyledBox>
 
-        <Menu isVisible={isVisible} />
-      </StyledHeader>
-    </>
+      <Menu isVisible={isVisible} />
+    </StyledHeader>
   )
 }
 

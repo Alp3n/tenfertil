@@ -11,38 +11,23 @@ const StyledMenuWrapper = styled.div`
   flex-direction: column;
   display: ${props => (props.isVisible ? "block" : "none")};
   top: 3.25rem;
-  z-index: 1;
+  padding-bottom: 2rem;
+  z-index: 100;
 
-  .opened {
-    animation: fadeOut ease 0.35s;
-  }
-
-  .closed {
-    animation: fadeIn ease 0.35s;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 100;
-    }
-  }
-  @keyframes fadeOut {
-    100% {
-      opacity: 100;
-    }
-    0% {
-      opacity: 0;
-    }
+  @media only screen and (min-width: 1201px) {
+    background-color: transparent;
+    width: 80%;
   }
 `
 const StyledBreak = styled.div`
   margin: 0 1rem 1rem 1rem;
-  /* margin-right: 1rem;
-  margin-bottom: 1.45rem; */
   border-bottom: 1px solid ${myTheme.color["blue-4"]};
+
+  @media only screen and (min-width: 1201px) {
+    margin: 0;
+    margin-right: 1rem;
+    /* width: auto; */
+  }
 `
 
 const Menu = (props, { isVisible }) => {

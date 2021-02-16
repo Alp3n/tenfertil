@@ -9,7 +9,7 @@ import Tips from "../circles/tips"
 import LeftBorderP from "../paragraph/left-border-paragraph"
 import AboutTenfertil from "../about/about-tenfertil"
 import AboutPeople from "../about/about-people"
-
+import Button from "../button/button"
 import { porady } from "../../content/data/porady"
 import { facts } from "../../content/data/facts"
 
@@ -49,7 +49,7 @@ const HomeDesktop = () => {
       <Breaker
         heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
         texts={[
-          "Nic prostszego - zadbaj o siebie! przygotuj się do tego ważnego faktu pamiętając o naszych radach:",
+          "Nic prostszego - zadbaj o siebie!\nPrzygotuj się do tego ważnego faktu pamiętając o naszych radach:",
         ]}
       />
       <Styled50>
@@ -64,6 +64,10 @@ const HomeDesktop = () => {
       />
       <Styled50>
         <AboutPeople />
+        <Button
+          href={`http://www.nhinstitute.pl`}
+          label={`dowiedz się więcej`}
+        />
       </Styled50>
     </>
   )

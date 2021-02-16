@@ -1,4 +1,5 @@
 import React from "react"
+
 import CirclesMobile from "./circles-mobile"
 
 const TipsMobile = ({ list }) => {

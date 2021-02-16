@@ -12,7 +12,7 @@ const StyledList = styled.div`
 const StyledListPoint = styled.div`
   display: flex;
   position: relative;
-  border-left: 2px solid ${myTheme.color.button};
+  border-left: 1px solid ${myTheme.color.button};
   &:last-child {
     border: none;
   }

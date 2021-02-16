@@ -12,6 +12,7 @@ const StyledFooterWrapper = styled.footer`
   width: 100%;
   padding: 3rem 0;
   background-color: ${myTheme.color["portrait-2"]};
+  margin-top: 10%;
 `
 
 const StyledContect = styled.div`

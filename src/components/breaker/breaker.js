@@ -12,6 +12,7 @@ const StyledWrapper = styled.div`
   padding: 5rem 0;
   background-color: ${myTheme.color["portrait-2"]};
   white-space: pre-wrap;
+  margin: 2rem 0;
 `
 
 const Styled50 = styled.div`

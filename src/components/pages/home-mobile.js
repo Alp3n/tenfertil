@@ -16,6 +16,7 @@ import Button from "../button/button"
 
 import { CgShoppingCart } from "react-icons/cg"
 import myTheme from "../../styles/myTheme"
+import { Link } from "gatsby"
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -51,12 +52,12 @@ const StyledP2 = styled.p`
   width: 100%;
 `
 
-const StyledCart = styled.button`
+const StyledCart = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 25%;
+  top: calc(524px - 48px);
   right: 0;
   width: 48px;
   height: 48px;
@@ -76,9 +77,12 @@ const HomeDesktop = () => {
   return (
     <>
       <GalleryMobile />
-      <StyledCart>
+
+      {/* Refactor cart button */}
+      <StyledCart to={"/buy"}>
         <CgShoppingCart size="24px" color={myTheme.color.white} />
       </StyledCart>
+      
       <StyledWrapper>
         <Logo width="280px" />
 
