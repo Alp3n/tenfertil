@@ -33,7 +33,7 @@ const StyledLink = styled(Link)`
 
 const StyledListPoint = styled.li`
   list-style: none;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 `
 
 const Nav = props => {

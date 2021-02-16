@@ -33,14 +33,14 @@ const LayoutDesktop = ({ children }) => {
     <StyledLayout>
       <HeaderDesktop />
       <FixedProduct>
-        <Product width="600px" />
+        <Product width="450px" />
       </FixedProduct>
       <StyledRight>{children}</StyledRight>
 
       <FooterDesktop
         email={`info@nhinstitute.pl`}
         number={`+48 666 368 005`}
-        company={`Sp.z.o.o. Białozora 9, 02-817 Warszawa, Polska KRS: 0000861627. REGON: 38710727. NIP: 9512507706.`}
+        company={`Sp.z o.o. Białozora 9, 02-817 Warszawa, Polska KRS: 0000861627. REGON: 38710727. NIP: 9512507706.`}
       />
     </StyledLayout>
   )

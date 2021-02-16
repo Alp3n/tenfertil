@@ -51,7 +51,7 @@ const StyledP2 = styled.p`
 const subTitle = "Optymalne wsparcie\npłodności"
 const break1 = {
   heading: "Jesteś mężczyzną\ni planujesz zdrowe potomstwo?",
-  text: ["Czy wiesz że?"],
+  text: ["Czy wiesz, że?"],
 }
 const HomeDesktop = () => {
   return (
@@ -89,7 +89,7 @@ const HomeDesktop = () => {
             Pamiętaj, że przygotowanie mężczyzny jest tak samo ważne, jak pomoc
             kobiecie w przygotowaniu do okresu ciąży. Wynika to z faktu, że
             zdrowe plemniki odgrywają kluczową rolę w procesie poczęcia. Zarówno
-            odpowiedni styl życia przyszłego ojca oraz jego wiek mają wpływ na
+            odpowiedni styl życia przyszłego ojca oraz jego wiek, mają wpływ na
             poczęcie zdrowego i upragnionego potomstwa.
           </StyledP2>
 
@@ -124,8 +124,8 @@ const HomeDesktop = () => {
         <BreakerMobile
           heading={`Nutrition Health Institute`}
           texts={[
-            "Nutrition Health Institute to firma, która koncentruje się naopracowywaniu i wytwarzaniu najnowszej generacji wieloskładnikowych preparatów farmaceutycznych zarówno dla kobiet jak i dla mężczyzn, którzy pragną spełnić największe swoje marzenie – zostać szczęśliwymi rodzicami.",
-            "Nutrition Health Institute chcę pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania z najnowszej generacji wieloskładnikowym preparatem TENfertilON, który jest rekomendowany przez najlepszych w Polsce lekarzy- specjalistów zajmujących się leczeniem niepłonności.",
+            "Nutrition Health Institute to firma, która koncentruje się na opracowywaniu i wytwarzaniu najnowszej generacji wieloskładnikowych preparatów farmaceutycznych, zarówno dla kobiet jak i dla mężczyzn, którzy pragną spełnić swoje największe marzenie – zostać szczęśliwymi rodzicami.",
+            "Nutrition Health Institute chce pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania z najnowszej generacji wieloskładnikowym preparatem TENfertil ON, który jest rekomendowany przez najlepszych w Polsce lekarzy- specjalistów zajmujących się leczeniem niepłonności.",
           ]}
         />
 

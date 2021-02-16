@@ -2,7 +2,7 @@ export const facts = [
   {
     header: "Niemal 1/3 pacjentów ",
     text:
-      "Cierpiących z powodu braku dzieci ma niepłodność idiopatyczną (30%), co oznacza, że nie ustalono przyczyn ?",
+      "Cierpiących z powodu braku dzieci ma niepłodność idiopatyczną (30%), co oznacza, że nie ustalono przyczyn...",
   },
   {
     header: "stres oksydacyjny",
@@ -12,12 +12,12 @@ export const facts = [
   {
     header: "L-Karnityna ",
     text:
-      "W postaci winianu - pełni funkcje ochronne wobec błon komórkowych i DNA plemników przed wolnymi rodnikami, zapobiega obumieraniu komórek, poprawia ruchliwość, koncentracje i morfologię plemników. Udowodniono, że właściwy poziom wchłaniania uzyskuje się stosując podaż 2 x dziennie. Efekt leczniczy widoczny jest przy przyjęciu co najmniej 1 g/ dobę. Wyższe dawki powodują uszkodzenie przewodu pokarmowego. TENfertil ON w 4 kapsułkach zawiera łącznie 1500 mg. Schemat podania wg schematu 2x 2 kapsułki na dobę, zapewnia optymalne stężenie L-Karnityny.",
+      "W postaci winianu - pełni funkcje ochronne wobec błon komórkowych i DNA plemników przed wolnymi rodnikami, zapobiega obumieraniu komórek, poprawia ruchliwość, koncentracje i morfologię plemników. Udowodniono, że właściwy poziom wchłaniania uzyskuje się stosując 2 x dziennie. Efekt leczniczy widoczny jest przy przyjęciu co najmniej 1 g/ dobę. Wyższe dawki powodują uszkodzenie przewodu pokarmowego. TENfertil ON w 4 kapsułkach zawiera łącznie 1500 mg. Schemat podania wg schematu 2x 2 kapsułki na dobę, zapewnia optymalne stężenie L-Karnityny.",
   },
   {
     header: "cholina",
     text:
-      "Niezbędna do prawidłowego metabolizmu cholina reguluje gospodarkę lipidową, jest składnikiem fosfolipidów, wchodzących w skład błony komórkowej plemników; działa synergistycznie w kompleksie z witaminą B12, dodatkowo korzystnie poprawia koncentrację,Stąd też w preparacie TENfertil ON zastosowano takie połączenie",
+      "Niezbędna do prawidłowego metabolizmu. Cholina reguluje gospodarkę lipidową, jest składnikiem fosfolipidów, wchodzących w skład błony komórkowej plemników. Działa synergicznie w kompleksie z witaminą B12, dodatkowo korzystnie poprawia koncentrację. Stąd też w preparacie TENfertil ON zastosowano takie połączenie",
   },
   {
     header: "KOENZYM Q10 ",
@@ -27,6 +27,6 @@ export const facts = [
   {
     header: "selen organiczny",
     text:
-      "Zastosowany związek L-selenometionina (selen  organiczny) jest łatwiej wchłanialny przez człowieka w porównaniu ze związkami nieorganicznymi. Celowo zastosowano niską dawkę – 40 mcg - uwagi na łatwość kumulacji selenu w organizmie. Często pojawia się efekt toksyczny - selenoza (biegunki, mdłości, czosnkowy oddech, zmęczenie, apatia, wypadanie włosów, łysienie, kruchość, łamliwość oraz odbarwienia paznokci, bóle stawów, promocja cukrzycy typu II).",
+      "Zastosowany związek L-selenometionina (selen  organiczny) jest łatwiej wchłanialny przez człowieka w porównaniu ze związkami nieorganicznymi. Celowo zastosowano niską dawkę – 40 mcg z uwagi na łatwość kumulacji selenu w organizmie. Często pojawia się efekt toksyczny - selenoza (biegunki, mdłości, czosnkowy oddech, zmęczenie, apatia, wypadanie włosów, łysienie, kruchość, łamliwość oraz odbarwienia paznokci, bóle stawów, promocja cukrzycy typu II).",
   },
 ]
