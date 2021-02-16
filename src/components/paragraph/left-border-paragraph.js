@@ -18,7 +18,7 @@ const LeftBorderP = ({ text }) => {
     <StyledWrapper>
       <StyledP>{text}</StyledP>
       <StyledP>
-        Chcesz, aby twoje życie nabrało kolorytu i prawdziwego sensu? chcesz
+        Chcesz, aby twoje życie nabrało kolorytu i prawdziwego sensu? Chcesz
         słyszeć jedno z piękniejszych słów – tata? Nic prostszego - postaraj się
         o potomstwo!
       </StyledP>

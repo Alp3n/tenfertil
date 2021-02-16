@@ -1,27 +1,11 @@
 Tenfertil TODOs
 
-1. Dodać adres offline:
-CMS CODE Centrum Medyczne
-ul. Juliana Tuwima 15 lok. U4
-90-010 Łódź DONE
-
-2. Zmniejszyć Produkt DONE
-
-3. Sprawdzić jakość zdjęć (zmniejszyć)
-
 4. Wyciągnąć dane do sitemetadata
 
-5. FontSIZE !!!!
+6. SEO !!!!!!
 
 UWAGI:
 MOBILE:
-1) mniejsze opakowanie, na cały screen to wygląda jak bląd
-2) menu - w rozwiniętym stanie - zdecydowanie większe odstępy i większa krawędź planszy w dół
-2) wszędzie  trochę większa interlinia, tak jest mało czytelny
-3) w opisie NHI - text body jest taki samy Light, jak i pozostale, większa interlinia
-4) kreska zielona kończy sie razem z tekstem (wszędzie) 
 5) błąd loga na dole- wysyłam w załączniku eps i svg loga NHI
-6) błędnie wyświetlane orzanizatory spółki (inne odległości)
-7) brakuję bttn "koszyk"= kup, ktory jest cały czas na screenie i przekierowuje na stronę "gdzie znaleźć"
 Na podstronie "gdzie" :
 1) inne odległości i rozmiar, przez to nie jest do końca zrozumiałe jaki bttn nalezy do której z aptek 

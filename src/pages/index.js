@@ -13,7 +13,7 @@ const IndexPage = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" })
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Suplement diety dla mężczyzn starających się o dzieci" />
       {isBigScreen && (
         <LayoutDesktop>
           <HomeDesktop />

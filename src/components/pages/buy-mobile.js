@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import BreakerMobile from "../breaker/breaker-mobile"
 import List from "../list/list"
 import { online, offline } from "../../content/data/apteki"
 import Product from "../product/product"
 import Button from "../button/button"
+import myTheme from "../../styles/myTheme"
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -13,32 +13,53 @@ const StyledWrapper = styled.div`
   width: 100%;
   margin: 3rem 0;
 `
+
+const StyledWrapperBreaker = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 3rem 0;
+  background-color: ${myTheme.color.background};
+  white-space: pre-wrap;
+  padding: 1.5rem;
+`
+
 const StyledMargin = styled.div`
   width: 90%;
   margin: 0 auto;
 `
-
-const StyledH2 = styled.h2`
+const StyledH1 = styled.h1`
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 36px;
+  margin: 1rem 0;
+`
+
+const StyledH2 = styled.h2`
+  font-size: 20px;
+  margin-bottom: 1.45rem;
 `
 
 const BuyDesktop = () => {
   return (
     <StyledWrapper>
       <Product width={`300px`} buttonOff />
-      <BreakerMobile
-        heading={"Gdzie kupić TENfertil&reg;ON?"}
-        texts={[
-          `Nasz suplement diety można znaleźć online jak i w aptekach różnych miast`,
-        ]}
-      />
+      <StyledWrapperBreaker>
+        <StyledH1>
+          Gdzie kupić TENfertil<sup>&reg;</sup>ON?
+        </StyledH1>
+        <StyledH2>
+          {
+            "Nasz suplement diety można znaleźć online jak i w aptekach różnych miast"
+          }
+        </StyledH2>
+      </StyledWrapperBreaker>
       <StyledMargin>
-        <StyledH2>On-Line:</StyledH2>
+        <StyledH1>On-Line:</StyledH1>
         <List list={online} online />
 
-        <StyledH2>Off-Line:</StyledH2>
+        <StyledH1>Off-Line:</StyledH1>
         <List list={offline} offline />
       </StyledMargin>
 

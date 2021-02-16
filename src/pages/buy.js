@@ -12,7 +12,7 @@ const SecondPage = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" })
   return (
     <>
-      <SEO title="Buy" />
+      <SEO title="Kup" />
       {isBigScreen && (
         <LayoutDesktop>
           <BuyDesktop />

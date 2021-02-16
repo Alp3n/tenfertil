@@ -6,16 +6,20 @@ import CirclesBullet from "./circles-bullet"
 
 const StyledList = styled.div`
   margin: 1rem;
-  width: 80%;
+  /* width: 90%; */
+
+  @media only screen and (min-width: 1201px) {
+    width: 70%;
+  }
 `
 
 const StyledListPoint = styled.div`
   display: flex;
   position: relative;
   border-left: 1px solid ${myTheme.color.button};
-  &:last-child {
+  /* &:last-child {
     border: none;
-  }
+  } */
 `
 const StyledBullet = styled.div`
   position: absolute;
