@@ -16,8 +16,9 @@ const StyledLayout = styled.div`
 
 const FixedProduct = styled.div`
   position: fixed;
-  top: 20%;
-  width: 50%;
+  top: 25vh;
+  width: 40%;
+  margin-left: 5%;
 `
 
 const StyledRight = styled.div`
@@ -32,7 +33,7 @@ const LayoutDesktop = ({ children }) => {
     <StyledLayout>
       <HeaderDesktop />
       <FixedProduct>
-        <Product width="450px" />
+        <Product width="50vh" height="30vh" />
       </FixedProduct>
       <StyledRight>{children}</StyledRight>
 

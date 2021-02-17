@@ -5,17 +5,18 @@ import { useStaticQuery, graphql } from "gatsby"
 import Button from "../button/button"
 
 const StyledImg = styled(Img)`
+  margin-bottom: 4vh;
   min-width: ${props => props.width};
-  margin-bottom: 2rem;
 `
 
 const StyledWrapper = styled.div`
   display: flex;
+  max-height: auto;
   flex-direction: column;
   align-items: center;
 `
 
-const Product = ({ width, buttonOff }) => {
+const Product = ({ width, height, buttonOff }) => {
   const data = useStaticQuery(graphql`
     query {
       imageLogoSmall: file(name: { eq: "tenfertil" }) {
@@ -32,6 +33,7 @@ const Product = ({ width, buttonOff }) => {
       <StyledImg
         fluid={data.imageLogoSmall.childImageSharp.fluid}
         width={width}
+        height={height}
       />
       {buttonOff ? null : <Button to={`/buy`} label="GDZIE KUPIĆ" />}
     </StyledWrapper>
