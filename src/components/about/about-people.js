@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import PersonPortrait from "./person-portrait"
+import Button from "../button/button"
 
 import myTheme from "../../styles/myTheme"
 
@@ -41,21 +42,24 @@ const AboutPeople = () => {
     }
   `)
   return (
-    <StyledWrapper>
-      {data.people.edges.map(person => (
-        <PersonPortrait
-          key={person.node.id}
-          image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
-          text={person.node.frontmatter.titles}
-          header={person.node.frontmatter.name}
+    <>
+      <StyledWrapper>
+        {data.people.edges.map(person => (
+          <PersonPortrait
+            key={person.node.id}
+            image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
+            text={person.node.frontmatter.titles}
+            header={person.node.frontmatter.name}
+          />
+        ))}
+      </StyledWrapper>
+      <div style={{ marginTop: `90px` }}>
+        <Button
+          href={`http://www.nhinstitute.pl`}
+          label={`dowiedz się więcej`}
         />
-      ))}
-      <div
-        style={{ display: `flex`, marginLeft: `3rem`, marginBottom: `3rem` }}
-      >
-        
       </div>
-    </StyledWrapper>
+    </>
   )
 }
 export default AboutPeople

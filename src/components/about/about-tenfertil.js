@@ -4,7 +4,12 @@ import Button from "../button/button"
 import Logo from "../logo/logo"
 
 const StyledWrapper = styled.div`
-  margin-top: 5rem;
+  /* margin-top: 1rem; */
+`
+
+const StyledLogoWrapper = styled.div`
+  width: 33rem;
+  margin-bottom: 1rem;
 `
 
 const StyledH2 = styled.h3`
@@ -20,9 +25,9 @@ const StyledP = styled.p`
 const AboutTenfertil = () => {
   return (
     <StyledWrapper>
-      <div style={{ width: `33rem`, margin: `2rem 0` }} id="about">
+      <StyledLogoWrapper id="about">
         <Logo />
-      </div>
+      </StyledLogoWrapper>
       <StyledH2>
         Jest prostym, innowacyjnym, bezpiecznym, a przede wszystkim skutecznym
         sposobem wspierania zdrowia mężczyzny w wieku rozrodczym.

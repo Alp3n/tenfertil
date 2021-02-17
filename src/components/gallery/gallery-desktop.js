@@ -7,7 +7,7 @@ import GalleryImage from "./galleryImage"
 const StyledGalleryBig = styled.div`
   display: grid;
   grid-template-columns: repeat(4, minmax(1fr, 400px));
-  grid-template-rows: repeat(2, minmax(1fr, 340px));
+  grid-template-rows: repeat(2, minmax(200px, 340px));
   grid-gap: 0.5rem;
   grid-template-areas:
     "img6 img6 img1 img2"

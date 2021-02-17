@@ -47,15 +47,17 @@ const StyledButtonHref = styled.a`
   }
 `
 
-const Button = ({ label, to, href }) => {
+const Button = ({ label, to, href, className }) => {
   return (
     <>
       {href ? (
-        <StyledButtonHref href={href} target={`_blank`}>
+        <StyledButtonHref href={href} target={`_blank`} {...className}>
           {label}
         </StyledButtonHref>
       ) : (
-        <StyledButtonTo to={to}>{label}</StyledButtonTo>
+        <StyledButtonTo to={to} {...className}>
+          {label}
+        </StyledButtonTo>
       )}
     </>
   )

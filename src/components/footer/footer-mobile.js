@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
-import LogoCss from "../logo/logo-css"
+// import LogoCss from "../logo/logo-css"
+import LogoNhi from "../logo/logo-nhi"
 import { CgSmartphone, CgMail, CgArrowUp } from "react-icons/cg"
 import { Link } from "gatsby"
 
@@ -53,7 +54,8 @@ const StyledLink = styled(Link)`
 const FooterMobile = ({ number, email, company }) => {
   return (
     <StyledFooterWrapper id="footer">
-      <LogoCss companyName={`Nutrition Health Institute`} />
+      {/* <LogoCss companyName={`Nutrition Health Institute`} /> */}
+      <LogoNhi width="300px" />
       <StyledInfoWrapper>
         <StyledContactWrapper>
           <StyledContactText>

@@ -9,7 +9,6 @@ import Tips from "../circles/tips"
 import LeftBorderP from "../paragraph/left-border-paragraph"
 import AboutTenfertil from "../about/about-tenfertil"
 import AboutPeople from "../about/about-people"
-import Button from "../button/button"
 import { porady } from "../../content/data/porady"
 import { facts } from "../../content/data/facts"
 
@@ -64,10 +63,6 @@ const HomeDesktop = () => {
       />
       <Styled50>
         <AboutPeople />
-        <Button
-          href={`http://www.nhinstitute.pl`}
-          label={`dowiedz się więcej`}
-        />
       </Styled50>
     </>
   )

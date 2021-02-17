@@ -8,8 +8,9 @@ export const online = [
     href: "https://www.aptekaglowna.pl/tenfertil-on-120-kaps.html",
   },
   {
-    name: "apteka melisa",
-    href: "https://e-melissa.pl/produkt/tenfertil-on-120-kaps,59435.html",
+    name: "apteka melissa",
+    href:
+      "https://www.apteka-melissa.pl/produkt/tenfertil-on-120-kaps,59435.html",
   },
   {
     name: "apteka olmed",

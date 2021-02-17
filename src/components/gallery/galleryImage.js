@@ -8,7 +8,15 @@ const StyledImage = styled(Img)`
 `
 
 const GalleryImage = ({ image, area }) => {
-  return <StyledImage fluid={image} className={area} />
+  return (
+    <StyledImage
+      fluid={image}
+      className={area}
+      objectFit="cover"
+      objectPosition="50% 50%"
+      draggable={false}
+    />
+  )
 }
 
 export default GalleryImage

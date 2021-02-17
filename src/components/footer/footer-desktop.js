@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
-import LogoCss from "../logo/logo-css"
+// import LogoCss from "../logo/logo-css"
 import { CgSmartphone, CgMail } from "react-icons/cg"
+import LogoNhi from "../logo/logo-nhi"
 
 const StyledFooterWrapper = styled.footer`
   display: flex;
@@ -40,7 +41,8 @@ const FooterDesktop = ({ number, email, company }) => {
   return (
     <StyledFooterWrapper id="footer">
       <StyledContent>
-        <LogoCss companyName={`Nutrition Health Institute`} />
+        {/* <LogoCss companyName={`Nutrition Health Institute`} /> */}
+        <LogoNhi width="50%" />
         <StyledInfoWrapper>
           <StyledContactWrapper>
             <StyledContactText>

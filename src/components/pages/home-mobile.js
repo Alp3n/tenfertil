@@ -135,7 +135,9 @@ const HomeDesktop = () => {
           <List list={facts} />
         </StyledMargin>
 
-        <Product width="300px" />
+        <div style={{ marginTop: "30px" }}>
+          <Product width="300px" />
+        </div>
 
         <BreakerMobile
           heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
