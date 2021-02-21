@@ -51,7 +51,7 @@ const BuyDesktop = () => {
         </StyledH1>
         <StyledH2>
           {
-            "Nasz suplement diety można znaleźć online jak i w aptekach różnych miast"
+            "Nasz suplement diety można znaleźć online jak i w aptekach stacjonarnych"
           }
         </StyledH2>
       </StyledWrapperBreaker>

@@ -1,11 +1,30 @@
-Tenfertil TODOs
+TODOs:
 
-4. Wyciągnąć dane do sitemetadata
+TENFERTIL.PL
+# Nutrition Health Institute opis teskt "niepłodność"
+# Marginesy boczne/ main mniejszy
+-----------------------
+NHINSTITUTE.PL
+# Logo w przycisku "Więcej o tenfertil"
+# pageData po angielsku
+# angielska strona
+------------------------
+# Wyciągnąć dane do pageData
+# SEO !!!!!!
 
-6. SEO !!!!!!
+HOSTING
+https://s118.linuxpl.com:2223/
+nhinstit
+aa0YKvo(p9
 
-UWAGI:
-MOBILE:
-5) błąd loga na dole- wysyłam w załączniku eps i svg loga NHI
-Na podstronie "gdzie" :
-1) inne odległości i rozmiar, przez to nie jest do końca zrozumiałe jaki bttn nalezy do której z aptek 
+FORMS TOOL
+alp3n
+Lamaj4Nhinstitut#
+
+EMAIL
+test@nhinstitute.pl
+Lamaj4Nhinstitut#
+
+WP LOCAL
+admin
+pXMHufHe$RxK##r$Ri

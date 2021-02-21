@@ -47,7 +47,7 @@ const BuyDesktop = () => {
           </StyledH1>
           <StyledH2>
             {
-              "Nasz suplement diety można znaleźć online\njak i w aptekach różnych miast"
+              "Nasz suplement diety można znaleźć online\njak i w aptekach stacjonarnych"
             }
           </StyledH2>
         </Styled50>
@@ -57,7 +57,7 @@ const BuyDesktop = () => {
         <List list={online} online />
       </Styled50>
       <Styled50>
-        <StyledH1>Off-Line:</StyledH1>
+        <StyledH1>Stacjonarnie:</StyledH1>
         <List list={offline} offline />
       </Styled50>
     </StyledWrapper>

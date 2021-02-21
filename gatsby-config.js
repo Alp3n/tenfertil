@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `TenFertil On`,
-    description: ` TenFertil On to suplement diety dla mężczyzn starających się o dzieci.`,
+    title: `TENfertil ON`,
+    description: ` TENfertil ON to suplement diety dla mężczyzn starających się o dzieci. Wyprodukowany przez Nutrition Health Institute.`,
     author: `nhinstitute.pl`,
   },
   plugins: [
@@ -58,8 +58,5 @@ module.exports = {
         },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

@@ -41,15 +41,19 @@ export const offline = [
   { name: "apteka namex", address: "Aleja Wilanowska 363, 02-665 Warszawa" },
   { name: "apteka pogodna", address: "Kobielska 23, 04-359 Warszawa" },
   {
-    name: "apteka nOvum. Apteka nOva",
+    name: "nOvum. apteka nOva",
     address: "Puławska 395, 02-807 Warszawa",
   },
   {
-    name: "apteka klinika anclara",
+    name: "klinika anclara",
     address: "Puławska 136/61, 02-624 Warszawa",
   },
   {
     name: "CMS CODE Centrum Medyczne",
     address: "Juliana Tuwima 15/U4, 90-010 Łódź",
+  },
+  {
+    name: "apteka avena 6",
+    address: "Patriotów 4, 09-409 Płock",
   },
 ]
