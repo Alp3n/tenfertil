@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
   border-left: 1px solid ${myTheme.color.button};
 `
 
-const AboutPeople = () => {
+const AboutPeople = ({ isVN }) => {
   const data = useStaticQuery(graphql`
     query People($regex: String = "people/") {
       people: allMdx(
@@ -26,7 +26,7 @@ const AboutPeople = () => {
               slug
               name
               titles
-              texts
+              titlesVN
               featuredImage {
                 id
                 childImageSharp {
@@ -48,7 +48,11 @@ const AboutPeople = () => {
           <PersonPortrait
             key={person.node.id}
             image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
-            text={person.node.frontmatter.titles}
+            text={
+              isVN
+                ? person.node.frontmatter.titlesVN
+                : person.node.frontmatter.titles
+            }
             header={person.node.frontmatter.name}
           />
         ))}
@@ -56,7 +60,7 @@ const AboutPeople = () => {
       <div style={{ marginTop: `90px` }}>
         <Button
           href={`http://www.nhinstitute.pl`}
-          label={`dowiedz się więcej`}
+          label={isVN ? "TÌM HIỂU THÊM " : "dowiedz się więcej"}
         />
       </div>
     </>

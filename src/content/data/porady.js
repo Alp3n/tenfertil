@@ -36,3 +36,34 @@ export const porady = [
     text: "wszelkich używek!",
   },
 ]
+
+export const poradyVN = [
+  {
+    image: <S1weight />,
+    header: "DỮ",
+    text:
+      "Để có trọng lượng cân đối với vóc dáng của bạn! nếu bạn thừa cân, hãy cố gắng giảm!",
+  },
+  {
+    image: <S2apple />,
+    header: "SỬ DỤNG",
+    text: "Một chế độ ăn uống phù hợp và cân bằng! Ăn các sản phẩm lành mạnh!",
+  },
+
+  {
+    image: <S3rope />,
+    header: "TẬP THỂ DỤC",
+    text: "Đều đặn - 3 lần / 1 tuần. Đi bộ!",
+  },
+  {
+    image: <S4body />,
+    header: "MẶC",
+    text:
+      "Quần áo thoải mái làm từ chất vảu tự nhiên! Bớt mặc đồ lót và quần nó sát!",
+  },
+  {
+    image: <S5drugs />,
+    header: "TRÁNH",
+    text: "Tất cả các chất kích thích!",
+  },
+]

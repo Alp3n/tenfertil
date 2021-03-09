@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import myTheme from "../../styles/myTheme"
+import { pageDataVN } from "../../content/data/page-data-vn"
+import { pageDataPL } from "../../content/data/page-data-pl"
 
 const links = [
   { href: "/#about", name: "O TENFERTIL" },
@@ -20,6 +22,7 @@ const StyledList = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 1rem;
   font-weight: 400;
   color: ${myTheme.color.button};
@@ -39,10 +42,11 @@ const StyledListPoint = styled.li`
 `
 
 const Nav = props => {
+  const pageData = props.isVN ? pageDataVN : pageDataPL
   return (
     <nav>
       <StyledList {...props}>
-        {links.map(link => (
+        {pageData.navbar.links.map(link => (
           <StyledListPoint key={link.href}>
             <StyledLink to={link.href}>{link.name}</StyledLink>
           </StyledListPoint>

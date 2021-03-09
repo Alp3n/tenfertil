@@ -9,8 +9,10 @@ import Tips from "../circles/tips"
 import LeftBorderP from "../paragraph/left-border-paragraph"
 import AboutTenfertil from "../about/about-tenfertil"
 import AboutPeople from "../about/about-people"
-import { porady } from "../../content/data/porady"
-import { facts } from "../../content/data/facts"
+// import { porady } from "../../content/data/porady"
+// import { facts } from "../../content/data/facts"
+import { pageDataVN } from "../../content/data/page-data-vn"
+import { pageDataPL } from "../../content/data/page-data-pl"
 
 const StyledGalleryWrapper = styled.div`
   width: 55%;
@@ -22,47 +24,57 @@ const Styled50 = styled.div`
   z-index: 999;
 `
 
-const HomeDesktop = () => {
+const HomeDesktop = ({ isVN }) => {
+  const myPageData = isVN ? pageDataVN : pageDataPL
   return (
     <>
       <StyledGalleryWrapper>
         <GalleryDesktop />
       </StyledGalleryWrapper>
       <Styled50>
-        <Title />
+        <Title
+          heading={myPageData.title.heading}
+          paragraph={myPageData.title.paragraph}
+        />
       </Styled50>
       <Styled50>
-        <AboutTenfertil />
+        <AboutTenfertil
+          heading={myPageData.aboutTenferil.heading}
+          paragraph={myPageData.aboutTenferil.paragraph}
+          buttonLabel={myPageData.aboutTenferil.buttonLabel}
+        />
       </Styled50>
       <Styled50>
-        <LeftBorderP />
-      </Styled50>
-      <Breaker
-        heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
-        texts={["Czy wiesz, że?"]}
-        id="facts"
-      />
-      <Styled50>
-        <List list={facts} />
-      </Styled50>
-      <Breaker
-        heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
-        texts={[
-          "Nic prostszego - zadbaj o siebie!\nPrzygotuj się do tego ważnego faktu pamiętając o naszych radach:",
-        ]}
-      />
-      <Styled50>
-        <Tips list={porady} width="260px" />
+        <LeftBorderP texts={myPageData.leftBorderP} />
       </Styled50>
       <Breaker
-        heading={`Nutrition Health Institute`}
-        texts={[
-          "Nutrition Health Institute to firma, która koncentruje się na opracowywaniu i wytwarzaniu najnowszej generacji wieloskładnikowych preparatów farmaceutycznych, zarówno dla kobiet jak i dla mężczyzn, którzy pragną spełnić swoje największe marzenie – zostać szczęśliwymi rodzicami.",
-          "Nutrition Health Institute chce pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania się z najnowszej generacji wieloskładnikowym preparatem TENfertil ON, który jest rekomendowany przez najlepszych w Polsce lekarzy-specjalistów zajmujących się leczeniem niepłodności.",
-        ]}
+        // heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
+        // texts={["Czy wiesz, że?"]}
+        // id="facts"
+        heading={myPageData.breakerFacts.heading}
+        texts={myPageData.breakerFacts.texts}
+        id={myPageData.breakerFacts.id}
       />
       <Styled50>
-        <AboutPeople />
+        <List list={myPageData.facts} />
+      </Styled50>
+      <Breaker
+        // heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
+        // texts={[
+        //   "Nic prostszego - zadbaj o siebie!\nPrzygotuj się do tego ważnego faktu pamiętając o naszych radach:",
+        // ]}
+        heading={myPageData.breakerTips.heading}
+        texts={myPageData.breakerTips.texts}
+      />
+      <Styled50>
+        <Tips list={myPageData.tips} width="260px" />
+      </Styled50>
+      <Breaker
+        heading={myPageData.breakerNhi.heading}
+        texts={myPageData.breakerNhi.texts}
+      />
+      <Styled50>
+        <AboutPeople isVN={isVN} />
       </Styled50>
     </>
   )

@@ -34,6 +34,13 @@ module.exports = {
         path: `${__dirname}/src/content/people`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/content/data`,
+      },
+    },
     { resolve: `gatsby-plugin-mdx`, extenstions: [`.mdx`, `.md`] },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

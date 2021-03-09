@@ -13,11 +13,13 @@ const StyledP = styled.p`
   font-size: 18px;
 `
 
-const LeftBorderP = ({ text }) => {
+const LeftBorderP = ({ texts }) => {
   return (
     <StyledWrapper>
-      <StyledP>{text}</StyledP>
-      <StyledP>
+      {texts.map(text => (
+        <StyledP>{text}</StyledP>
+      ))}
+      {/* <StyledP>
         Chcesz, aby twoje życie nabrało kolorytu i prawdziwego sensu? Chcesz
         słyszeć jedno z piękniejszych słów – tata? Nic prostszego - postaraj się
         o potomstwo!
@@ -36,7 +38,7 @@ const LeftBorderP = ({ text }) => {
         <strong>
           TENfertil<sup>&reg;</sup>ON
         </strong>
-      </StyledP>
+      </StyledP> */}
     </StyledWrapper>
   )
 }

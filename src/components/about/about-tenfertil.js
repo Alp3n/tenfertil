@@ -22,22 +22,28 @@ const StyledP = styled.p`
   width: 70%;
 `
 
-const AboutTenfertil = () => {
+const AboutTenfertil = ({ heading, paragraph, buttonLabel }) => {
   return (
     <StyledWrapper>
       <StyledLogoWrapper id="about">
         <Logo />
       </StyledLogoWrapper>
       <StyledH2>
-        Jest prostym, innowacyjnym, bezpiecznym, a przede wszystkim skutecznym
-        sposobem wspierania zdrowia mężczyzny w wieku rozrodczym.
+        {/* Jest prostym, innowacyjnym, bezpiecznym, a przede wszystkim skutecznym
+        sposobem wspierania zdrowia mężczyzny w wieku rozrodczym. */}
+        {heading}
       </StyledH2>
       <StyledP>
-        10 składników: L-karnityna, Cholina, Cynk organiczny, Witamina C,
+        {/* 10 składników: L-karnityna, Cholina, Cynk organiczny, Witamina C,
         Koenzym Q10 (ubichinon), L-arginina, Witamina E, Selen organiczny,
-        Witamina B12, Kwas foliowy (L-metylofolian wapnia)
+        Witamina B12, Kwas foliowy (L-metylofolian wapnia) */}
+        {paragraph}
       </StyledP>
-      <Button to={`/tenfertil-ulotka.pdf`} label={`pobierz ulotkę`} />
+      <Button
+        to={`/tenfertil-ulotka.pdf`}
+        // label={`pobierz ulotkę`}
+        label={buttonLabel}
+      />
     </StyledWrapper>
   )
 }

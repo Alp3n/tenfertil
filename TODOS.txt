@@ -28,3 +28,17 @@ Lamaj4Nhinstitut#
 WP LOCAL
 admin
 pXMHufHe$RxK##r$Ri
+
+Masz nową wiadomość z Nhinstitute.pl!
+
+Data: {$SUBMISSIONDATE}
+
+Nadawca:
+{$ANSWER_fullName}
+{$ANSWER_email}
+{$ANSWER_phoneNumber}
+
+
+To jest automatyczna wiadomość z formularza na stronie nhinstitute.pl. Proszę nie odpowiadać na tego maila.
+
+

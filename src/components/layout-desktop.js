@@ -28,12 +28,12 @@ const StyledRight = styled.div`
   margin-top: 2rem;
 `
 
-const LayoutDesktop = ({ children }) => {
+const LayoutDesktop = ({ isVN, children }) => {
   return (
     <StyledLayout>
-      <HeaderDesktop />
+      <HeaderDesktop isVN={isVN} />
       <FixedProduct>
-        <Product width="50vh" height="30vh" />
+        <Product width="50vh" height="30vh" isVN={isVN} />
       </FixedProduct>
       <StyledRight>{children}</StyledRight>
 

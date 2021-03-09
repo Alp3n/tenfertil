@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const Product = ({ width, height, buttonOff }) => {
+const Product = ({ width, height, buttonOff, isVN }) => {
   const data = useStaticQuery(graphql`
     query {
       imageLogoSmall: file(name: { eq: "tenfertil" }) {
@@ -35,7 +35,11 @@ const Product = ({ width, height, buttonOff }) => {
         width={width}
         height={height}
       />
-      {buttonOff ? null : <Button to={`/buy`} label="GDZIE KUPIĆ" />}
+      {buttonOff ? null : isVN ? (
+        <Button to={`/buy-vn`} label="Tìm kiếm chỗ bán" />
+      ) : (
+        <Button to={`/buy`} label="GDZIE KUPIĆ" />
+      )}
     </StyledWrapper>
   )
 }

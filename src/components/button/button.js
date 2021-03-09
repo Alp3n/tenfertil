@@ -8,8 +8,9 @@ const StyledButtonTo = styled(Link)`
   align-items: center;
   justify-content: center;
   height: 48px;
-  max-width: 300px;
-  width: 90%;
+  /* max-width: 300px; */
+  /* width: 90%; */
+  width: fit-content;
   border: none;
   background-color: ${myTheme.color.button};
   color: ${myTheme.color.white};
@@ -18,7 +19,7 @@ const StyledButtonTo = styled(Link)`
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 1rem 3rem;
   &:hover {
     background-color: ${myTheme.color["blue-4"]};
     cursor: pointer;
@@ -30,7 +31,8 @@ const StyledButtonHref = styled.a`
   align-items: center;
   justify-content: center;
   height: 48px;
-  max-width: 250px;
+  /* max-width: 400px; */
+  width: fit-content;
   border: none;
   background-color: ${myTheme.color.button};
   color: ${myTheme.color.white};
@@ -39,7 +41,7 @@ const StyledButtonHref = styled.a`
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 1rem 3rem;
 
   &:hover {
     background-color: ${myTheme.color["blue-4"]};

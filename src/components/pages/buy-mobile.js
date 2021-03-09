@@ -59,7 +59,7 @@ const BuyDesktop = () => {
         <StyledH1>On-Line:</StyledH1>
         <List list={online} online />
 
-        <StyledH1>Off-Line:</StyledH1>
+        <StyledH1>Stacjonarnie:</StyledH1>
         <List list={offline} offline />
       </StyledMargin>
 

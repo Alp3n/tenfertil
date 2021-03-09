@@ -26,7 +26,7 @@ const StyledBox = styled.div`
   padding-right: 1rem;
 `
 
-const HeaderDesktop = () => {
+const HeaderDesktop = ({ isVN }) => {
   const [isVisible, setVisible] = useState(false)
   const openMenu = useMediaQuery({ query: "(max-width: 1630px)" })
   const handleClick = () => {
@@ -40,11 +40,11 @@ const HeaderDesktop = () => {
         {openMenu ? (
           <MenuButton handleClick={handleClick} isVisible={isVisible} />
         ) : (
-          <Nav flex="flex" />
+          <Nav flex="flex" isVN={isVN} />
         )}
       </StyledBox>
 
-      <Menu isVisible={isVisible} />
+      <Menu isVisible={isVisible} isVN={isVN} />
     </StyledHeader>
   )
 }

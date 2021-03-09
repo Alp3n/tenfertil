@@ -16,11 +16,13 @@ const StyledH1 = styled.h1`
   margin: 0;
 `
 
-const Title = ({ title, subTitle }) => {
+const Title = ({ heading, paragraph }) => {
   return (
     <StyledWrapper>
-      <StyledP>suplement diety dla mężczyzn starających się o dzieci</StyledP>
-      <StyledH1>Optymalne wsparcie płodności</StyledH1>
+      {/* <StyledP>suplement diety dla mężczyzn starających się o dzieci</StyledP>
+      <StyledH1>Optymalne wsparcie płodności</StyledH1> */}
+      <StyledP>{paragraph}</StyledP>
+      <StyledH1>{heading}</StyledH1>
     </StyledWrapper>
   )
 }
