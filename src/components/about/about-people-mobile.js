@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const AboutPeopleMobile = () => {
+const AboutPeopleMobile = ({ isVN }) => {
   const data = useStaticQuery(graphql`
     query PeopleMobile($regex: String = "people/") {
       people: allMdx(
@@ -25,6 +25,7 @@ const AboutPeopleMobile = () => {
               slug
               name
               titles
+              titlesVN
               texts
               featuredImage {
                 id
@@ -47,11 +48,18 @@ const AboutPeopleMobile = () => {
         <PersonPortraitMobile
           key={person.node.id}
           image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
-          text={person.node.frontmatter.titles}
+          text={
+            isVN
+              ? person.node.frontmatter.titlesVN
+              : person.node.frontmatter.titles
+          }
           header={person.node.frontmatter.name}
         />
       ))}
-      <Button href={`http://www.nhinstitute.pl`} label={`dowiedz się więcej`} />
+      <Button
+        href={`http://www.nhinstitute.pl`}
+        label={isVN ? "TÌM HIỂU THÊM " : "dowiedz się więcej"}
+      />
     </StyledWrapper>
   )
 }

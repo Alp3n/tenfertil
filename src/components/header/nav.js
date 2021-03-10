@@ -5,12 +5,6 @@ import myTheme from "../../styles/myTheme"
 import { pageDataVN } from "../../content/data/page-data-vn"
 import { pageDataPL } from "../../content/data/page-data-pl"
 
-const links = [
-  { href: "/#about", name: "O TENFERTIL" },
-  { href: "/#facts", name: "FAKTY I PORADY" },
-  { href: "#footer", name: "KONTAKT" },
-]
-
 const StyledList = styled.ul`
   margin: 0;
   line-height: 1.45rem;
@@ -23,7 +17,7 @@ const StyledList = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   color: ${myTheme.color.button};
 
@@ -38,7 +32,7 @@ const StyledLink = styled(Link)`
 
 const StyledListPoint = styled.li`
   list-style: none;
-  margin: 1rem 1rem;
+  margin-left: 1.2rem;
 `
 
 const Nav = props => {

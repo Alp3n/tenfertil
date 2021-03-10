@@ -38,7 +38,10 @@ export const offline = [
   { name: "apteka dr.max", address: "Andersa 24, 00-201 Warszawa" },
   { name: "apteka dr.max", address: "Zgoda 9, 00-018 Warszawa" },
   { name: "apteka hibiskus", address: "Rydygiera 11, 01-793 Warszawa" },
-  { name: "apteka namex", address: "Aleja Wilanowska 363, 02-665 Warszawa" },
+  {
+    name: "apteka namex",
+    address: "Aleja Wilanowska 363, 02-665 Warszawa",
+  },
   { name: "apteka pogodna", address: "Kobielska 23, 04-359 Warszawa" },
   {
     name: "nOvum. apteka nOva",
@@ -54,6 +57,69 @@ export const offline = [
   },
   {
     name: "apteka avena 6",
+    address: "Patriotów 4, 09-409 Płock",
+  },
+]
+
+export const onlineVN = [
+  {
+    name: "Tiệm thuốc aptekaria",
+    href: "https://aptekaria.pl/tenfertil-on-wsparcie-meskiej-plodnosci",
+  },
+  {
+    name: "Tiệm thuốc główna",
+    href: "https://www.aptekaglowna.pl/tenfertil-on-120-kaps.html",
+  },
+  {
+    name: "Tiệm thuốc melissa",
+    href:
+      "https://www.apteka-melissa.pl/produkt/tenfertil-on-120-kaps,59435.html",
+  },
+  {
+    name: "Tiệm thuốc olmed",
+    href:
+      "https://www.aptekaolmed.pl/product-pol-93879-TENfertil-ON-120-kapsulek.html?text:tenfertil",
+  },
+  {
+    name: "Tiệm thuốc radomska",
+    href:
+      "https://allegro.pl/oferta/tenfertil-on-120-kapsulek-nowosc-na-nasienie-10167488690",
+  },
+  {
+    name: "Tiệm thuốc rosa",
+    href:
+      "https://www.aptekarosa.pl/produkt/44533-tenfertil-on-120-kapsulek.html",
+  },
+  {
+    name: "Tiệm thuốc zawiszy",
+    href: "https://aptekazawiszy.pl/tenfertil-on-120-kapsulek.html",
+  },
+]
+
+export const offlineVN = [
+  { name: "Tiệm thuốc centrum", address: "Stawki 2, 00-193 Warszawa" },
+  { name: "Tiệm thuốc dr.max", address: "Andersa 24, 00-201 Warszawa" },
+  { name: "Tiệm thuốc dr.max", address: "Zgoda 9, 00-018 Warszawa" },
+  { name: "Tiệm thuốc hibiskus", address: "Rydygiera 11, 01-793 Warszawa" },
+  {
+    name: "Tiệm thuốc namex",
+    address: "Aleja Wilanowska 363, 02-665 Warszawa",
+  },
+  { name: "Tiệm thuốc pogodna", address: "Kobielska 23, 04-359 Warszawa" },
+  {
+    name: "nOvum. apteka nOva",
+    address: "Puławska 395, 02-807 Warszawa",
+  },
+  {
+    name: "klinika anclara",
+    address: "Puławska 136/61, 02-624 Warszawa",
+  },
+  {
+    name: "CMS CODE Centrum Medyczne",
+    address: "Juliana Tuwima 15/U4, 90-010 Łódź",
+  },
+  {
+    name: "Tiệm thuốc avena 6",
     address: "Patriotów 4, 09-409 Płock",
   },
 ]

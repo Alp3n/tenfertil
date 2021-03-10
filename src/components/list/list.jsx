@@ -48,7 +48,7 @@ const StyledText = styled.p`
   font-size: 18px;
 `
 
-const List = ({ list, online, offline }) => {
+const List = ({ isVN, list, online, offline }) => {
   return (
     <StyledList>
       {list.map(item => (
@@ -61,7 +61,7 @@ const List = ({ list, online, offline }) => {
           {online ? (
             <StyledTextBox>
               <StyledHeading>{item.name}</StyledHeading>
-              <Button href={item.href} label={`KUP`} />
+              <Button href={item.href} label={isVN ? "MUA" : "KUP"} />
             </StyledTextBox>
           ) : offline ? (
             <StyledTextBox>

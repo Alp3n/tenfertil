@@ -8,14 +8,7 @@ import Menu from "./menu"
 import MenuButton from "./menu-button"
 import Nav from "./nav"
 
-const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f0f0f0;
-`
-
-const StyledHeaderSmall = styled.div`
+const StyledHeaderSmall = styled.header`
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -23,7 +16,7 @@ const StyledHeaderSmall = styled.div`
   background-color: #f0f0f0;
 `
 
-const StyledHeaderBig = styled.div`
+const StyledHeaderBig = styled.header`
   display: flex;
   max-width: 1520px;
   justify-content: space-between;
@@ -43,20 +36,16 @@ const Header = () => {
   return (
     <>
       {isTabletOrMobile && (
-        <StyledHeader>
-          <StyledHeaderSmall>
-            <Logo width="125px" />
-            <MenuButton handleClick={handleClick} isVisible={isVisible} />
-          </StyledHeaderSmall>
-        </StyledHeader>
+        <StyledHeaderSmall>
+          <Logo width="125px" />
+          <MenuButton handleClick={handleClick} isVisible={isVisible} />
+        </StyledHeaderSmall>
       )}
       {isBigScreen && (
-        <StyledHeader>
-          <StyledHeaderBig>
-            <Logo width="200px" />
-            <Nav flex="flex" />
-          </StyledHeaderBig>
-        </StyledHeader>
+        <StyledHeaderBig>
+          <Logo width="200px" />
+          <Nav flex="flex" />
+        </StyledHeaderBig>
       )}
       <Menu
         isVisible={isVisible}

@@ -51,7 +51,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const FooterMobile = ({ number, email, company }) => {
+const FooterMobile = ({ isVN, number, email, company }) => {
   return (
     <StyledFooterWrapper id="footer">
       {/* <LogoCss companyName={`Nutrition Health Institute`} /> */}
@@ -72,7 +72,7 @@ const FooterMobile = ({ number, email, company }) => {
         <StyledText size={myTheme.typography["text-p3"]}>{company}</StyledText>
       </StyledInfoWrapper>
       <StyledText>© {new Date().getFullYear()} Nhinstitute</StyledText>
-      <StyledLink to={`/`}>
+      <StyledLink to={isVN ? "/vn" : "/"}>
         <CgArrowUp size={`24px`} color={`white`} />
       </StyledLink>
     </StyledFooterWrapper>

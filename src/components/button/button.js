@@ -8,8 +8,6 @@ const StyledButtonTo = styled(Link)`
   align-items: center;
   justify-content: center;
   height: 48px;
-  /* max-width: 300px; */
-  /* width: 90%; */
   width: fit-content;
   border: none;
   background-color: ${myTheme.color.button};

@@ -9,9 +9,9 @@ import S5drugs from "../../images/svg/s5drugs.svg"
 export const pageDataVN = {
   navbar: {
     links: [
-      { name: "Khoảng TENfirtil ON", href: "#about" },
-      { name: "Sự thật và Lời khuyên", href: "#facts" },
-      { name: "Liên hệ", href: "#footer" },
+      { name: "trong khoảng", href: "/vn#about" },
+      { name: "Sự thật và Lời khuyên", href: "/vn#facts" },
+      { name: "Liên hệ", href: "/vn#footer" },
       {
         name: (
           <>

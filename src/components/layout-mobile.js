@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import styled from "styled-components"
 
@@ -19,14 +12,15 @@ const StyledBody = styled.div`
   overflow: hidden;
 `
 
-const LayoutMobile = ({ children }) => {
+const LayoutMobile = ({ isVN, children }) => {
   return (
     <>
-      <HeaderMobile />
+      <HeaderMobile isVN={isVN} />
       <StyledBody>
         <main>{children}</main>
       </StyledBody>
       <FooterMobile
+        isVN={isVN}
         email={`info@nhinstitute.pl`}
         number={`+48 666 368 005`}
         company={`Sp.z o.o. Białozora 9, 02-817 Warszawa, Polska\nKRS: 0000861627. REGON: 38710727.\nNIP: 9512507706.`}

@@ -33,7 +33,7 @@ const StyledMargin = styled.div`
 const StyledH1 = styled.h1`
   font-size: 28px;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 2rem 0;
 `
 
 const StyledH2 = styled.h2`
@@ -41,31 +41,39 @@ const StyledH2 = styled.h2`
   margin-bottom: 1.45rem;
 `
 
-const BuyDesktop = () => {
+const BuyMobile = ({ isVN }) => {
   return (
     <StyledWrapper>
       <Product width={`300px`} buttonOff />
       <StyledWrapperBreaker>
         <StyledH1>
-          Gdzie kupić TENfertil<sup>&reg;</sup>ON?
+          {isVN ? (
+            <>
+              Tìm kiếm chỗ bán TENfertil<sup>&reg;</sup>ON?
+            </>
+          ) : (
+            <>
+              Gdzie kupić TENfertil<sup>&reg;</sup>ON?
+            </>
+          )}
         </StyledH1>
         <StyledH2>
-          {
-            "Nasz suplement diety można znaleźć online jak i w aptekach stacjonarnych"
-          }
+          {isVN
+            ? "Thực phẩm bổ sung của chúng tôi có thể được tìm thấy trực tuyến và tại các hiệu thuốc văn phòng phẩm"
+            : "Nasz suplement diety można znaleźć online\njak i w aptekach stacjonarnych"}
         </StyledH2>
       </StyledWrapperBreaker>
       <StyledMargin>
         <StyledH1>On-Line:</StyledH1>
-        <List list={online} online />
+        <List isVN={isVN} list={online} online />
 
-        <StyledH1>Stacjonarnie:</StyledH1>
+        <StyledH1>{isVN ? "Dứng im" : "Stacjonarnie:"}</StyledH1>
         <List list={offline} offline />
       </StyledMargin>
 
-      <Button to={`/`} label={`WRÓĆ`} />
+      <Button to={isVN ? "/vn" : "/"} label={isVN ? "QUAY LẠI" : "WRÓĆ"} />
     </StyledWrapper>
   )
 }
 
-export default BuyDesktop
+export default BuyMobile

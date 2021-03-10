@@ -37,27 +37,35 @@ const StyledH2 = styled.h2`
   font-size: 30px;
 `
 
-const BuyDesktop = () => {
+const BuyDesktop = ({ isVN }) => {
   return (
     <StyledWrapper>
       <StyledWrapperBreaker>
         <Styled50>
           <StyledH1>
-            Gdzie kupić TENfertil<sup>&reg;</sup>ON?
+            {isVN ? (
+              <>
+                Tìm kiếm chỗ bán TENfertil<sup>&reg;</sup>ON?
+              </>
+            ) : (
+              <>
+                Gdzie kupić TENfertil<sup>&reg;</sup>ON?
+              </>
+            )}
           </StyledH1>
           <StyledH2>
-            {
-              "Nasz suplement diety można znaleźć online\njak i w aptekach stacjonarnych"
-            }
+            {isVN
+              ? "Thực phẩm bổ sung của chúng tôi có thể được\ntìm thấy trực tuyến và tại các hiệu thuốc văn phòng phẩm"
+              : "Nasz suplement diety można znaleźć online\njak i w aptekach stacjonarnych"}
           </StyledH2>
         </Styled50>
       </StyledWrapperBreaker>
       <Styled50>
         <StyledH1>On-Line:</StyledH1>
-        <List list={online} online />
+        <List isVN={isVN} list={online} online />
       </Styled50>
       <Styled50>
-        <StyledH1>Stacjonarnie:</StyledH1>
+        <StyledH1>{isVN ? "Dứng im" : "Stacjonarnie:"}</StyledH1>
         <List list={offline} offline />
       </Styled50>
     </StyledWrapper>

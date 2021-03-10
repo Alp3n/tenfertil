@@ -22,7 +22,6 @@ const StyledBox = styled.div`
   display: flex;
   width: 40%;
   justify-content: space-between;
-  align-items: center;
   padding-right: 1rem;
 `
 

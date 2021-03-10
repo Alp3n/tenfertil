@@ -12,7 +12,7 @@ const StyledHeaderSmall = styled.div`
   align-items: center;
 `
 
-const HeaderMobile = () => {
+const HeaderMobile = ({ isVN }) => {
   const [isVisible, setVisible] = useState(false)
 
   const handleClick = () => {
@@ -26,7 +26,7 @@ const HeaderMobile = () => {
         <MenuButton handleClick={handleClick} isVisible={isVisible} />
       </StyledHeaderSmall>
 
-      <Menu isVisible={isVisible} />
+      <Menu isVisible={isVisible} isVN={isVN} />
     </>
   )
 }

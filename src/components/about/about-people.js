@@ -59,7 +59,7 @@ const AboutPeople = ({ isVN }) => {
       </StyledWrapper>
       <div style={{ marginTop: `90px` }}>
         <Button
-          href={`http://www.nhinstitute.pl`}
+          href={`https://www.nhinstitute.pl`}
           label={isVN ? "TÌM HIỂU THÊM " : "dowiedz się więcej"}
         />
       </div>

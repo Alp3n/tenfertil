@@ -17,7 +17,7 @@ const LeftBorderP = ({ texts }) => {
   return (
     <StyledWrapper>
       {texts.map(text => (
-        <StyledP>{text}</StyledP>
+        <StyledP key={text}>{text}</StyledP>
       ))}
       {/* <StyledP>
         Chcesz, aby twoje życie nabrało kolorytu i prawdziwego sensu? Chcesz
