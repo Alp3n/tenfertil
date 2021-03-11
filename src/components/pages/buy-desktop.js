@@ -65,7 +65,7 @@ const BuyDesktop = ({ isVN }) => {
         <List isVN={isVN} list={online} online />
       </Styled50>
       <Styled50>
-        <StyledH1>{isVN ? "Dứng im" : "Stacjonarnie:"}</StyledH1>
+        <StyledH1>{isVN ? "Dứng im:" : "Stacjonarnie:"}</StyledH1>
         <List list={offline} offline />
       </Styled50>
     </StyledWrapper>

@@ -38,7 +38,7 @@ export const pageDataPL = {
 
     "Do tego jakże ważnego faktu musisz jednak odpowiednio się przygotować, zarówno pod względem mentalnym jak i fizycznym. Pamiętaj, że przygotowanie mężczyzny jest tak samo ważne, jak pomoc kobiecie w przygotowaniu do okresu ciąży. Wynika to z faktu, że zdrowe plemniki odgrywają kluczową rolę w procesie poczęcia. Zarówno odpowiedni styl życia przyszłego ojca oraz jego wiek mają wpływ na poczęcie zdrowego i upragnionego potomstwa.",
     <>
-      Pomoże Ci w tym{" "}
+      {"Pomoże Ci w tym "}
       <strong>
         TENfertil<sup>&reg;</sup>ON
       </strong>
@@ -98,7 +98,7 @@ export const pageDataPL = {
     {
       image: <S2apple />,
       header: "stosuj",
-      text: "odpowiednią i zrównoważoną dietę ! Jedz zdrowe produkty!",
+      text: "odpowiednią i zrównoważoną dietę! Jedz zdrowe produkty!",
     },
     {
       image: <S3rope />,

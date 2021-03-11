@@ -42,15 +42,13 @@ const HomeDesktop = ({ isVN }) => {
           heading={myPageData.aboutTenferil.heading}
           paragraph={myPageData.aboutTenferil.paragraph}
           buttonLabel={myPageData.aboutTenferil.buttonLabel}
+          isVN={isVN}
         />
       </Styled50>
       <Styled50>
         <LeftBorderP texts={myPageData.leftBorderP} />
       </Styled50>
       <Breaker
-        // heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
-        // texts={["Czy wiesz, że?"]}
-        // id="facts"
         heading={myPageData.breakerFacts.heading}
         texts={myPageData.breakerFacts.texts}
         id={myPageData.breakerFacts.id}
@@ -59,10 +57,6 @@ const HomeDesktop = ({ isVN }) => {
         <List list={myPageData.facts} />
       </Styled50>
       <Breaker
-        // heading={`Jesteś mężczyzną\ni planujesz zdrowe potomstwo?`}
-        // texts={[
-        //   "Nic prostszego - zadbaj o siebie!\nPrzygotuj się do tego ważnego faktu pamiętając o naszych radach:",
-        // ]}
         heading={myPageData.breakerTips.heading}
         texts={myPageData.breakerTips.texts}
       />

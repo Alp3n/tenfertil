@@ -9,8 +9,8 @@ import S5drugs from "../../images/svg/s5drugs.svg"
 export const pageDataVN = {
   navbar: {
     links: [
-      { name: "trong khoảng", href: "/vn#about" },
-      { name: "Sự thật và Lời khuyên", href: "/vn#facts" },
+      { name: "công dụng của TENfirtil ON", href: "/vn#about" },
+      { name: "SỰ THẬT VÀ LỜI KHUYÊN", href: "/vn#facts" },
       { name: "Liên hệ", href: "/vn#footer" },
       {
         name: (
@@ -35,12 +35,12 @@ export const pageDataVN = {
   },
   leftBorderP: [
     "Bạn muốn cuộc đời có thêm sức sống và ý nghĩa hơn? Bạn đang ao ước được làm bố? Còn chần chừ gì, hãy cùng chúng tôi cố gắng để ước mơ của bạn được thành công!",
-    "Tuy nhiên, bạn cần chuẩn bị đúng cách  cả về mặt tinh thần lẫn thể chất. Bạn nên nhớ rằng, việc giúp một người đàn ông cũng quan trọng như việc chuẩn bị cho người phụ nữ chuẩn bị mang thai. Tinh trùng khỏe mạnh đóng một vai trò rất quan trọng trong quá trình thụ thai. Từ lối sống đến độ tuổi của người đàn ông đều có tác động đến sức khỏe của thai nhi sau này.",
+    "Tuy nhiên, bạn cần chuẩn bị đúng cách cả về mặt tinh thần lẫn thể chất. Bạn nên nhớ rằng, việc giúp một người đàn ông cũng quan trọng như việc chuẩn bị cho người phụ nữ chuẩn bị mang thai. Tinh trùng khỏe mạnh đóng một vai trò rất quan trọng trong quá trình thụ thai. Từ lối sống đến độ tuổi của người đàn ông đều có tác động đến sức khỏe của thai nhi sau này.",
     <>
       <strong>
         TENfertil<sup>&reg;</sup>ON
-      </strong>{" "}
-      luôn sẵn sàng đồng hành cùng bạn
+      </strong>
+      {" luôn sẵn sàng đồng hành cùng bạn"}
     </>,
   ],
 
@@ -56,24 +56,24 @@ export const pageDataVN = {
         "Những người không có khả năng sinh con bị vô sinh vô căn (30%), tức là không có nguyên nhân...",
     },
     {
-      header: "Stress oxy hoá",
+      header: "ứng kích oxy hoá",
       text:
-        "Là chất có khả năng chống oxi hóa rất tốt, là thành phần có ý nghĩ đặc biệt quan trọng trong việc kích thích sự tăng trưởng của tinh trùng. Dựa trên một số nghiên cứu cho thấy rằng các thành phần chứa trong TENfertil ON mang lại hiểu quả rất cao trong việc giảm oxy hoá.",
+        "Là một chất vô cùng quan trọng trong việc giúp cải thiện chất lượng và kích thích sự tăng trưởng của tinh trùng. Dựa trên một số nghiên cứu cho thấy rằng các thành phần chứa trong TENfertil ON mang lại hiểu quả rất cao trong việc giảm oxy hoá.",
     },
     {
       header: "carnitine",
       text:
-        "Thuộc dạng Natri Tartrate - có tính năng bảo vệ màng tế bào và DNA của tinh trùng chống lại các gốc tự do trong cơ thể có hại cho bạn, đảm bảo duy trì sự sống và chất lượng sức khỏe tinh trùng một cách tối đa, định hướng tốt trong sự di chuyển và nâng cao hình thái của tinh trùng ( kích cỡ, hình dạng). Sử dụng hai lần mỗi ngày sẽ đạt được lượng hấp thụ phù hợp nhất. Hiệu quả điều trị có thể thấy rõ khi dùng ít nhất 1 g / ngày. Nếu dùng liều cao hơn số với chỉ định có thể gây hại cho đường tiêu hóa. Ở trong 4 viên TENfertil ON có chứa tổng cộng 1500 mg. Theo tiêu chuẩn liệu trình, nên sử dụng mỗi ngày 2 lần và 1 lần 2 viên, để đảm bảo nồng độ Carnitine được cung cấp một cách tối ưu.",
+        "Thuộc dạng Natri Tartrate - có tính năng bảo vệ màng tế bào và DNA của tinh trùng chống lại các gốc tự do trong cơ thể có hại cho bạn, đảm bảo duy trì sự sống và chất lượng sức khỏe tinh trùng một cách tối đa, định hướng tốt trong sự di chuyển và nâng cao hình thái của tinh trùng (kích cỡ, hình dạng). Sử dụng hai lần mỗi ngày sẽ đạt được lượng hấp thụ phù hợp nhất. Hiệu quả điều trị có thể thấy rõ khi dùng ít nhất 1 g / ngày. Nếu dùng liều cao hơn số với chỉ định có thể gây hại cho đường tiêu hóa. Ở trong 4 viên TENfertil ON có chứa tổng cộng 1500 mg. Theo tiêu chuẩn liệu trình, nên sử dụng mỗi ngày 2 lần và 1 lần 2 viên, để đảm bảo nồng độ Carnitine được cung cấp một cách tối ưu.",
     },
     {
       header: "choline",
       text:
-        "Choline là một chất dinh dưỡng quan trọng tương tự như các Vitamin B, có vai trò quan trọng không thể bỏ qua trong chu trình phát triển của tinh trùng. Choline điều chỉnh sự chuyển hóa lipid, là một thành phần của phospholipid và cũng là một phần màng tế bào của tinh trùng. Kết hợp cùng với vitamin B12 sẽ giúp hấp thụ tốt hơn, vì vậy TENfertil ON đã sử dụng liên hợp này trong sản phẩm.",
+        "Choline là một chất dinh dưỡng quan trọng tương tự như  Vitamin B, có vai trò quan trọng không thể bỏ qua trong chu trình phát triển của tinh trùng. Choline điều chỉnh sự chuyển hóa lipid, là một thành phần của phospholipid và cũng là một phần màng tế bào của tinh trùng. Kết hợp cùng với vitamin B12 sẽ giúp hấp thụ tốt hơn, vì vậy TENfertil ON đã sử dụng liên hợp này trong sản phẩm.",
     },
     {
       header: "Coenzyme 10 (CoQ10)",
       text:
-        "Là một chất chống oxy hóa nội sinh, có thể tìm thấy trong thịt, cá, ngũ cốc. Nó có nhiệm vụ hỗ trợ enzyme điều chỉnh các quá trình trao đổi chất. Bổ sung CoQ10 trong vòng 3 tháng đã có thể cải thiện khả năng di chuyển, nồng độ và hình thái của tinh trùng, giảm mức độ oxy hóa và giảm sự phân mảnh DNA ở nam giới vô sinh không có nguyên nhân.",
+        "Ubiquinone, chất chống oxy hóa nội sinh - được chiết xuất trong ty thể của tế bào sinh vật và động vật. Nó có nhiệm vụ hỗ trợ enzyme điều chỉnh các quá trình trao đổi chất. Bổ sung CoQ10 trong vòng 3 tháng đã có thể cải thiện khả năng di chuyển, nồng độ và hình thái của tinh trùng, giảm mức độ oxy hóa và giảm sự phân mảnh DNA ở nam giới vô sinh không có nguyên nhân.",
     },
     {
       header: "selenium organic",
@@ -91,38 +91,38 @@ export const pageDataVN = {
   tips: [
     {
       image: <S1weight />,
-      header: "DỮ",
+      header: "DỮ GÌN",
       text:
-        "Để có trọng lượng cân đối với vóc dáng của bạn! nếu bạn thừa cân, hãy cố gắng giảm!",
+        "để có trọng lượng cân đối với vóc dáng của bạn! Nếu bạn thừa cân, hãy cố gắng giảm!",
     },
     {
       image: <S2apple />,
       header: "SỬ DỤNG",
       text:
-        "Một chế độ ăn uống phù hợp và cân bằng! Ăn các sản phẩm lành mạnh!",
+        "một chế độ ăn uống phù hợp và cân bằng! Ăn các sản phẩm lành mạnh!",
     },
 
     {
       image: <S3rope />,
       header: "TẬP THỂ DỤC",
-      text: "Đều đặn - 3 lần / 1 tuần. Đi bộ!",
+      text: "đều đặn - 3 lần / 1 tuần. Đi bộ!",
     },
     {
       image: <S4body />,
       header: "MẶC",
       text:
-        "Quần áo thoải mái làm từ chất vảu tự nhiên! Bớt mặc đồ lót và quần nó sát!",
+        "quần áo thoải mái làm từ chất vải tự nhiên! Bớt mặc đồ lót và quần nó sát!",
     },
     {
       image: <S5drugs />,
       header: "TRÁNH",
-      text: "Tất cả các chất kích thích!",
+      text: "tất cả các chất kích thích!",
     },
   ],
   breakerNhi: {
     heading: "Nutrition Health Institute",
     texts: [
-      "Nutrition Health Instute là công ty chuyên sâu về phát triển và sản xuất những dòng sản phẩm được chế tạo ra từ các nguyên dược liệu mới nhất, dành cho nữ và nam với ước mơ được làm  bố, mẹ.",
+      "Nutrition Health Instute là công ty chuyên sâu về phát triển và sản xuất những dòng sản phẩm được chế tạo ra từ các nguyên dược liệu mới nhất, dành cho nữ và nam với ước mơ được làm bố, mẹ .",
       "Nutrition Health Instute mong muốn được hỗ trợ sinh sản cho nam giới trong độ tuổi trưởng thành. Chúng tôi khuyến khích bạn tìm hiểu thêm về dòng sản phẩm mới TENfertil ON, dòng sản phẩm này được khuyên dùng nhiều nhất bởi các bác sĩ và các chuyên gia điều trị vô sinh hàng đầu tại Ba Lan.",
     ],
   },

@@ -58,7 +58,7 @@ const AboutPeopleMobile = ({ isVN }) => {
       ))}
       <Button
         href={`http://www.nhinstitute.pl`}
-        label={isVN ? "TÌM HIỂU THÊM " : "dowiedz się więcej"}
+        label={isVN ? "TÌM HIỂU THÊM" : "dowiedz się więcej"}
       />
     </StyledWrapper>
   )

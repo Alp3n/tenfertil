@@ -60,7 +60,7 @@ const AboutPeople = ({ isVN }) => {
       <div style={{ marginTop: `90px` }}>
         <Button
           href={`https://www.nhinstitute.pl`}
-          label={isVN ? "TÌM HIỂU THÊM " : "dowiedz się więcej"}
+          label={isVN ? "TÌM HIỂU THÊM" : "dowiedz się więcej"}
         />
       </div>
     </>

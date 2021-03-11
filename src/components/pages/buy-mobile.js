@@ -67,7 +67,7 @@ const BuyMobile = ({ isVN }) => {
         <StyledH1>On-Line:</StyledH1>
         <List isVN={isVN} list={online} online />
 
-        <StyledH1>{isVN ? "Dứng im" : "Stacjonarnie:"}</StyledH1>
+        <StyledH1>{isVN ? "Dứng im:" : "Stacjonarnie:"}</StyledH1>
         <List list={offline} offline />
       </StyledMargin>
 

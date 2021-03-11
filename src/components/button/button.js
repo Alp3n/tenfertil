@@ -7,11 +7,11 @@ const StyledButtonTo = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
   width: fit-content;
   border: none;
   background-color: ${myTheme.color.button};
   color: ${myTheme.color.white};
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -28,12 +28,11 @@ const StyledButtonHref = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 48px;
-  /* max-width: 400px; */
   width: fit-content;
   border: none;
   background-color: ${myTheme.color.button};
   color: ${myTheme.color.white};
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
