@@ -7,9 +7,9 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const Logo = ({ isVN, width }) => {
+const Logo = ({ width }) => {
   return (
-    <StyledLink to={isVN ? "/vn" : "/"}>
+    <StyledLink to={"/"}>
       <ImageLogo width={width} />
     </StyledLink>
   )

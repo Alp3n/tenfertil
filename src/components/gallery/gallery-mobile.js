@@ -5,6 +5,7 @@ import styled from "styled-components"
 import GalleryImage from "./galleryImage"
 
 const StyledGallerySmall = styled.div`
+  margin-top: 3.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: repeat(2, minmax(200px, 230px));

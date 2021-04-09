@@ -3,6 +3,7 @@ import styled from "styled-components"
 import List from "../list/list"
 import { online, offline } from "../../content/data/apteki"
 import myTheme from "../../styles/myTheme"
+import { useTranslation } from "react-i18next"
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -37,35 +38,23 @@ const StyledH2 = styled.h2`
   font-size: 30px;
 `
 
-const BuyDesktop = ({ isVN }) => {
+const BuyDesktop = () => {
+  const { t } = useTranslation()
+
   return (
     <StyledWrapper>
       <StyledWrapperBreaker>
         <Styled50>
-          <StyledH1>
-            {isVN ? (
-              <>
-                Tìm kiếm chỗ bán TENfertil<sup>&reg;</sup>ON?
-              </>
-            ) : (
-              <>
-                Gdzie kupić TENfertil<sup>&reg;</sup>ON?
-              </>
-            )}
-          </StyledH1>
-          <StyledH2>
-            {isVN
-              ? "Thực phẩm bổ sung của chúng tôi có thể được\ntìm thấy trực tuyến và tại các hiệu thuốc văn phòng phẩm"
-              : "Nasz suplement diety można znaleźć online\njak i w aptekach stacjonarnych"}
-          </StyledH2>
+          <StyledH1>{t("buy.heading")}</StyledH1>
+          <StyledH2>{t("buy.paragraph")}</StyledH2>
         </Styled50>
       </StyledWrapperBreaker>
       <Styled50>
-        <StyledH1>On-Line:</StyledH1>
-        <List isVN={isVN} list={online} online />
+        <StyledH1>{t("buy.online")}</StyledH1>
+        <List list={online} label={t("buy.buy")} online />
       </Styled50>
       <Styled50>
-        <StyledH1>{isVN ? "Dứng im:" : "Stacjonarnie:"}</StyledH1>
+        <StyledH1>{t("buy.stationary")}</StyledH1>
         <List list={offline} offline />
       </Styled50>
     </StyledWrapper>

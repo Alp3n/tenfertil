@@ -12,15 +12,14 @@ const StyledBody = styled.div`
   overflow: hidden;
 `
 
-const LayoutMobile = ({ isVN, children }) => {
+const LayoutMobile = ({ children }) => {
   return (
     <>
-      <HeaderMobile isVN={isVN} />
+      <HeaderMobile />
       <StyledBody>
         <main>{children}</main>
       </StyledBody>
       <FooterMobile
-        isVN={isVN}
         email={`info@nhinstitute.pl`}
         number={`+48 666 368 005`}
         company={`Sp.z o.o. Białozora 9, 02-817 Warszawa, Polska\nKRS: 0000861627. REGON: 38710727.\nNIP: 9512507706.`}

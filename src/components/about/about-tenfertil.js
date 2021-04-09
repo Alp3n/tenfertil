@@ -22,7 +22,7 @@ const StyledP = styled.p`
   width: 70%;
 `
 
-const AboutTenfertil = ({ heading, paragraph, buttonLabel, isVN }) => {
+const AboutTenfertil = ({ heading, paragraph, buttonLabel, to }) => {
   return (
     <StyledWrapper>
       <StyledLogoWrapper id="about">
@@ -30,10 +30,7 @@ const AboutTenfertil = ({ heading, paragraph, buttonLabel, isVN }) => {
       </StyledLogoWrapper>
       <StyledH2>{heading}</StyledH2>
       <StyledP>{paragraph}</StyledP>
-      <Button
-        to={isVN ? "/tenfertil-ulotka-vn.pdf" : "/tenfertil-ulotka.pdf"}
-        label={buttonLabel}
-      />
+      <Button to={to} label={buttonLabel} />
     </StyledWrapper>
   )
 }

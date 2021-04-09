@@ -10,32 +10,27 @@ const StyledWrapper = styled.div`
   align-items: center;
 `
 
-const AboutPeopleMobile = ({ isVN }) => {
+const AboutPeopleMobile = ({ people, label }) => {
   const data = useStaticQuery(graphql`
-    query PeopleMobile($regex: String = "people/") {
-      people: allMdx(
-        filter: { frontmatter: { slug: { regex: $regex } } }
-        sort: { fields: frontmatter___myid, order: ASC }
-      ) {
-        edges {
-          node {
-            id
-            slug
-            frontmatter {
-              slug
-              name
-              titles
-              titlesVN
-              texts
-              featuredImage {
-                id
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
+    query PeopleMobile {
+      rokicki: file(relativePath: { eq: "portrait/p1rokicki.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      grodzicka: file(relativePath: { eq: "portrait/p2grodzicka.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      wolski: file(relativePath: { eq: "portrait/p3wolski.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -44,22 +39,26 @@ const AboutPeopleMobile = ({ isVN }) => {
 
   return (
     <StyledWrapper>
-      {data.people.edges.map(person => (
-        <PersonPortraitMobile
-          key={person.node.id}
-          image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
-          text={
-            isVN
-              ? person.node.frontmatter.titlesVN
-              : person.node.frontmatter.titles
-          }
-          header={person.node.frontmatter.name}
-        />
-      ))}
-      <Button
-        href={`http://www.nhinstitute.pl`}
-        label={isVN ? "TÌM HIỂU THÊM" : "dowiedz się więcej"}
+      <PersonPortraitMobile
+        key={people.rokicki.id}
+        image={data.rokicki.childImageSharp.fluid}
+        text={people.rokicki.titles}
+        header={people.rokicki.name}
       />
+      <PersonPortraitMobile
+        key={people.grodzicka.id}
+        image={data.grodzicka.childImageSharp.fluid}
+        text={people.grodzicka.titles}
+        header={people.grodzicka.name}
+      />
+      <PersonPortraitMobile
+        key={people.wolski.id}
+        image={data.wolski.childImageSharp.fluid}
+        text={people.wolski.titles}
+        header={people.wolski.name}
+      />
+
+      <Button href={`http://www.nhinstitute.pl`} label={label} />
     </StyledWrapper>
   )
 }

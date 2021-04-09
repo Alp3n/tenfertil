@@ -11,31 +11,27 @@ const StyledWrapper = styled.div`
   border-left: 1px solid ${myTheme.color.button};
 `
 
-const AboutPeople = ({ isVN }) => {
+const AboutPeople = ({ people, label }) => {
   const data = useStaticQuery(graphql`
-    query People($regex: String = "people/") {
-      people: allMdx(
-        filter: { frontmatter: { slug: { regex: $regex } } }
-        sort: { fields: frontmatter___myid, order: ASC }
-      ) {
-        edges {
-          node {
-            id
-            slug
-            frontmatter {
-              slug
-              name
-              titles
-              titlesVN
-              featuredImage {
-                id
-                childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
+    query People {
+      rokicki: file(relativePath: { eq: "portrait/p1rokicki.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      grodzicka: file(relativePath: { eq: "portrait/p2grodzicka.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      wolski: file(relativePath: { eq: "portrait/p3wolski.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -44,24 +40,24 @@ const AboutPeople = ({ isVN }) => {
   return (
     <>
       <StyledWrapper>
-        {data.people.edges.map(person => (
-          <PersonPortrait
-            key={person.node.id}
-            image={person.node.frontmatter.featuredImage.childImageSharp.fluid}
-            text={
-              isVN
-                ? person.node.frontmatter.titlesVN
-                : person.node.frontmatter.titles
-            }
-            header={person.node.frontmatter.name}
-          />
-        ))}
+        <PersonPortrait
+          image={data.rokicki.childImageSharp.fluid}
+          text={people.rokicki.titles}
+          header={people.rokicki.name}
+        />
+        <PersonPortrait
+          image={data.grodzicka.childImageSharp.fluid}
+          text={people.grodzicka.titles}
+          header={people.grodzicka.name}
+        />
+        <PersonPortrait
+          image={data.wolski.childImageSharp.fluid}
+          text={people.wolski.titles}
+          header={people.wolski.name}
+        />
       </StyledWrapper>
       <div style={{ marginTop: `90px` }}>
-        <Button
-          href={`https://www.nhinstitute.pl`}
-          label={isVN ? "TÌM HIỂU THÊM" : "dowiedz się więcej"}
-        />
+        <Button href={`https://www.nhinstitute.pl`} label={label} />
       </div>
     </>
   )

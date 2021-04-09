@@ -16,8 +16,7 @@ import { CgShoppingCart } from "react-icons/cg"
 import myTheme from "../../styles/myTheme"
 import { Link } from "gatsby"
 
-import { pageDataVN } from "../../content/data/page-data-vn"
-import { pageDataPL } from "../../content/data/page-data-pl"
+import { useTranslation } from "react-i18next"
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -68,66 +67,63 @@ const StyledCart = styled(Link)`
   z-index: 999;
 `
 
-const HomeDesktop = ({ isVN }) => {
-  const myPageData = isVN ? pageDataVN : pageDataPL
+const HomeDesktop = () => {
+  const { t } = useTranslation()
   return (
     <>
       <GalleryMobile />
 
-      <StyledCart to={isVN ? "/buy-vn" : "/buy"}>
+      <StyledCart to={"/buy"}>
         <CgShoppingCart size="24px" color={myTheme.color.white} />
       </StyledCart>
 
       <StyledWrapper>
-        <Logo width="280px" isVN={isVN} />
+        <Logo width="280px" />
 
-        <StyledH1>{myPageData.title.heading}</StyledH1>
+        <StyledH1>{t("title.heading")}</StyledH1>
 
-        <Product width="300px" isVN={isVN} />
+        <Product width="300px" />
 
         <StyledMargin>
-          <StyledH2 id="about">{myPageData.aboutTenferil.heading}</StyledH2>
+          <StyledH2 id="about">{t("aboutTenferil.heading")}</StyledH2>
 
-          <StyledP>{myPageData.aboutTenferil.paragraph}</StyledP>
+          <StyledP>{t("aboutTenferil.paragraph")}</StyledP>
 
-          {myPageData.leftBorderP.map(text => (
+          {t("leftBorderP").map(text => (
             <StyledP2 key={text}>{text}</StyledP2>
           ))}
 
-          <Button
-            to={isVN ? "/tenfertil-ulotka-vn.pdf" : "/tenfertil-ulotka.pdf"}
-            label={myPageData.aboutTenferil.buttonLabel}
-          />
+          <Button to={t("leaflet")} label={t("aboutTenferil.buttonLabel")} />
         </StyledMargin>
 
         <BreakerMobile
-          heading={myPageData.breakerFacts.heading}
-          texts={myPageData.breakerFacts.texts}
-          id={myPageData.breakerFacts.id}
+          heading={t("breakerFacts.heading")}
+          texts={t("breakerFacts.texts")}
+          id={t("breakerFacts.id")}
         />
 
         <StyledMargin>
-          <List list={myPageData.facts} />
+          <List list={t("facts")} />
         </StyledMargin>
 
         <div style={{ marginTop: "30px" }}>
-          <Product width="300px" isVN={isVN} />
+          <Product width="300px" />
         </div>
 
         <BreakerMobile
-          heading={myPageData.breakerTips.heading}
-          texts={myPageData.breakerTips.texts}
-          id={myPageData.breakerTips.id}
+          heading={t("breakerTips.heading")}
+          texts={t("breakerTips.texts")}
+          id={t("breakerTips.id")}
         />
 
-        <TipsMobile list={myPageData.tips} />
+        <TipsMobile list={t("tips")} />
 
         <BreakerMobile
-          heading={myPageData.breakerNhi.heading}
-          texts={myPageData.breakerNhi.texts}
+          heading={t("breakerNhi.heading")}
+          texts={t("breakerNhi.texts")}
         />
 
-        <AboutPeopleMobile isVN={isVN} />
+        <AboutPeopleMobile people={t("people")} label={t("learnMore")} />
       </StyledWrapper>
     </>
   )

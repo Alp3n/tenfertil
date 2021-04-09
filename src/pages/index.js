@@ -7,6 +7,7 @@ import HomeDesktop from "../components/pages/home-desktop"
 import HomeMobile from "../components/pages/home-mobile"
 
 import SEO from "../components/seo"
+import "../i18n"
 
 const IndexPage = () => {
   const isBigScreen = useMediaQuery({ query: "(min-width:1201px)" })

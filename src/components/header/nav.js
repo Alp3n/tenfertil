@@ -2,12 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import myTheme from "../../styles/myTheme"
-import { pageDataVN } from "../../content/data/page-data-vn"
-import { pageDataPL } from "../../content/data/page-data-pl"
+import { useTranslation } from "react-i18next"
 
 const StyledList = styled.ul`
   margin: 0;
-  line-height: 1.45rem;
+  line-height: 1.8rem;
 
   @media only screen and (min-width: 1201px) {
     display: flex;
@@ -17,7 +16,7 @@ const StyledList = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: ${myTheme.color.button};
 
@@ -35,18 +34,24 @@ const StyledListPoint = styled.li`
   margin: 0 1.2rem;
 `
 
+const StyledNav = styled.nav`
+  align-self: center;
+  margin: 0;
+  pad: 0;
+`
+
 const Nav = props => {
-  const pageData = props.isVN ? pageDataVN : pageDataPL
+  const { t } = useTranslation()
   return (
-    <nav>
+    <StyledNav>
       <StyledList {...props}>
-        {pageData.navbar.links.map(link => (
+        {t("navbar.links").map(link => (
           <StyledListPoint key={link.href}>
             <StyledLink to={link.href}>{link.name}</StyledLink>
           </StyledListPoint>
         ))}
       </StyledList>
-    </nav>
+    </StyledNav>
   )
 }
 

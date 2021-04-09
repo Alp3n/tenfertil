@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Button from "../button/button"
+import { useTranslation } from "react-i18next"
 
 const StyledImg = styled(Img)`
   margin-bottom: 4vh;
@@ -17,6 +18,7 @@ const StyledWrapper = styled.div`
 `
 
 const Product = ({ width, height, buttonOff, isVN }) => {
+  const { t } = useTranslation()
   const data = useStaticQuery(graphql`
     query {
       imageLogoSmall: file(name: { eq: "tenfertil" }) {
@@ -35,11 +37,7 @@ const Product = ({ width, height, buttonOff, isVN }) => {
         width={width}
         height={height}
       />
-      {buttonOff ? null : isVN ? (
-        <Button to={`/buy-vn`} label="Tìm kiếm chỗ bán" />
-      ) : (
-        <Button to={`/buy`} label="GDZIE KUPIĆ" />
-      )}
+      {buttonOff ? null : <Button to={`/buy`} label={t("whereToBuy")} />}
     </StyledWrapper>
   )
 }

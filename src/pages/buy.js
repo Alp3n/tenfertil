@@ -6,6 +6,7 @@ import BuyDesktop from "../components/pages/buy-desktop"
 import BuyMobile from "../components/pages/buy-mobile"
 
 import SEO from "../components/seo"
+import "../i18n"
 
 const SecondPage = () => {
   const isBigScreen = useMediaQuery({ query: "(min-width:1201px)" })
