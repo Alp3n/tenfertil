@@ -8,26 +8,32 @@ const StyledWrapper = styled.div`
   justify-content: center;
   width: 100%;
   margin: 2rem 0;
-  padding: 3rem 0;
-  background-color: ${myTheme.color.background};
+  padding: 1.5rem 2rem;
+  margin: ${props => (props.plain ? 0 : "2rem 0")};
+  background-color: ${props =>
+    props.plain ? "#ffffff" : myTheme.color.background};
   white-space: pre-wrap;
-  padding: 1.5rem;
 `
 
 const StyledH1 = styled.h1`
+  font-weight: 700;
+  /* font-family: "Oswald"; */
   font-size: 28px;
   margin: 1rem 0;
 `
 const StyledH2 = styled.h2`
-  font-size: 20px;
+  font-size: ${props => (props.plain ? "18px" : "20px")};
+  font-weight: ${props => (props.plain ? "300" : "400")};
 `
 
-const BreakerMobile = ({ heading, texts, id }) => {
+const BreakerMobile = ({ heading, texts, id, plain }) => {
   return (
-    <StyledWrapper id={id}>
+    <StyledWrapper id={id} plain={plain}>
       <StyledH1>{heading}</StyledH1>
       {texts.map(text => (
-        <StyledH2 key={text}>{text}</StyledH2>
+        <StyledH2 key={text} plain={plain}>
+          {text}
+        </StyledH2>
       ))}
     </StyledWrapper>
   )

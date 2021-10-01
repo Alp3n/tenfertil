@@ -28,11 +28,13 @@ const circles = [
 
 const StyledCirclesWrapper = styled.div`
   display: flex;
-  height: 260px;
-  width: 260px;
+  height: 210px;
+  width: 210px;
   position: relative;
   justify-content: center;
   align-items: center;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
 `
 
 const StyledCircle = styled.div`
@@ -43,9 +45,12 @@ const StyledCircle = styled.div`
   border-radius: 100%;
   border: 2px solid white;
   background-color: white;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   z-index: 4;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  /* transform: scale(0.5); */
 `
 
 const StyledBackground = styled.div`
@@ -60,23 +65,26 @@ const StyledBackground = styled.div`
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  max-width: 40%;
+  margin-left: 5%;
+  max-width: 35%;
 `
 
 const StyledWrapper = styled.div`
   display: flex;
-  margin: 3rem;
+  margin: 0 3rem 1rem 3rem;
   align-items: center;
 `
 
-const StyledHeader = styled.h2`
+const StyledHeader = styled.p`
   font-size: 28px;
   text-transform: uppercase;
+  font-weight: 400;
+  /* font-family: "Oswald"; */
 `
 
 const StyledP = styled.p`
   font-size: 22px;
+  font-weight: 300;
 `
 
 const Circles = ({ image, text, header }) => {

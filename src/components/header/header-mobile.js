@@ -14,7 +14,6 @@ const StyledHeaderSmall = styled.div`
   align-items: center;
   z-index: 999;
   background-color: white;
-  box-shadow: ${props => (props.isVisible ? null : "0 1px 6px grey")};
 `
 
 const HeaderMobile = () => {

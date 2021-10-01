@@ -17,11 +17,14 @@ const StyledButtonTo = styled(Link)`
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem 0;
-  padding: 1rem 3rem;
+  padding: 0.6rem 3rem;
   &:hover {
     background-color: ${myTheme.color["blue-4"]};
     cursor: pointer;
   }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  } ;
 `
 
 const StyledButtonHref = styled.a`
@@ -38,11 +41,14 @@ const StyledButtonHref = styled.a`
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem 0;
-  padding: 1rem 3rem;
+  padding: 0.6rem 3rem;
 
   &:hover {
     background-color: ${myTheme.color["blue-4"]};
     cursor: pointer;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
   }
 `
 

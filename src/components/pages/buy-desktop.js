@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import List from "../list/list"
+import Recommendation from "../recommendation"
 import { online, offline } from "../../content/data/apteki"
 import myTheme from "../../styles/myTheme"
 import { useTranslation } from "react-i18next"
@@ -32,6 +33,7 @@ const Styled50 = styled.div`
 const StyledH1 = styled.h1`
   font-size: 48px;
   font-weight: 700;
+  /* font-family: "Oswald"; */
   margin-bottom: 36px;
 `
 const StyledH2 = styled.h2`
@@ -43,6 +45,7 @@ const BuyDesktop = () => {
 
   return (
     <StyledWrapper>
+      <Recommendation />
       <StyledWrapperBreaker>
         <Styled50>
           <StyledH1>{t("buy.heading")}</StyledH1>

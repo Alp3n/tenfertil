@@ -14,11 +14,23 @@ const Wrapper = styled.div`
 `
 
 const StyledSelect = styled.select`
+  padding: 0 0.65em 0 0 !important;
+  height: auto !important;
+
   border: none;
   background-color: ${props => props.desktop && "transparent"};
   text-transform: uppercase;
   font-size: 20px;
   color: #151070;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23151070'><polygon points='0,0 100,0 50,50'/></svg>")
+    no-repeat;
+  background-size: 12px;
+  background-position: 100% 65%;
+  background-repeat: no-repeat;
+  background-color: transparent;
 `
 
 const StyledOption = styled.option`

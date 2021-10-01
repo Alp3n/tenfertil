@@ -7,7 +7,7 @@
     ]
   },
   "title": {
-    "paragraph": "suplement diety dla mężczyzn starających się o dzieci",
+    "paragraph": "Suplement diety dla mężczyzn starających się o dzieci.",
     "heading": "Optymalne wsparcie płodności"
   },
   "aboutTenferil": {
@@ -24,7 +24,7 @@
   ],
   "breakerFacts": {
     "heading": "Jesteś mężczyzną\ni planujesz zdrowe potomstwo?",
-    "texts": ["Czy wiesz, że?"],
+    "texts": ["Czy wiesz że?"],
     "id": "facts"
   },
   "facts": [
@@ -87,6 +87,28 @@
       "text": "wszelkich używek!"
     }
   ],
+  "opinions": [
+    {
+      "id": 1,
+      "heading": "\"Środek naprawdę bardzo skuteczny. Dzięki niemu dziś możemy się cieszyć ciążą!\"",
+      "signature": "Oliwia, opinia na aptekazawiszy.pl"
+    },
+    {
+      "id": 2,
+      "heading": "\"Czemu jest tańszy, to nie wiem, ale na pewno jest skuteczny. Pół roku starań i mamy to! Dwie kreseczki na teście\"",
+      "signature": "Liga, opinia na gdziepolek.pl"
+    },
+    {
+      "id": 3,
+      "heading": "\"Jak najbardziej polecam, stosowałem kilka miesięcy i żona zaszła w ciążę, uważam że to zasługa tego leku\"",
+      "signature": "Sebastian, opinia na medsowa.pl"
+    },
+    {
+      "id": 4,
+      "heading": "\"Ciąża po 4 miesiącach stosowania chyba mówi sama za siebie :) Wcześniej 2 lata starań i echo. Myślę że to najlepszy lek na rynku\"",
+      "signature": "Matylda, opinia na apteka-melissa.pl"
+    }
+  ],
   "breakerNhi": {
     "heading": "Nutrition Health Institute",
     "texts": [
@@ -94,7 +116,7 @@
       "Nutrition Health Institute chce pomóc mężczyznom w wieku rozrodczym w posiadaniu upragnionego potomstwa. Zachęcamy do zapoznania się z najnowszej generacji wieloskładnikowym preparatem TENfertil ON, który jest rekomendowany przez najlepszych w Polsce lekarzy-specjalistów zajmujących się leczeniem niepłodności."
     ]
   },
-  "whereToBuy": "gdzie kupić",
+  "whereToBuy": "Kup",
   "leaflet": "/tenfertil-ulotka.pdf",
   "learnMore": "Dowiedz się więcej",
   "buy": {
@@ -117,16 +139,6 @@
     "grodzicka": {
       "name": "Adriana Grodzicka",
       "titles": ["Prezes Zarządu"]
-    },
-    "wolski": {
-      "name": "Jan Karol Wolski",
-      "titles": [
-        "Ekspert medyczny, Specjalista Urolog,",
-        "\nEBU 4860,",
-        "\nSpecjalista Chirurg Dziecięcy",
-        "\nSpecjalista Urlog Dziecięcy",
-        "\nAndrolog Kliniczny, Certyfikat PTA"
-      ]
     }
   },
   "notFound": {

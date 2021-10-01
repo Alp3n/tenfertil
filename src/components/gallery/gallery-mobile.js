@@ -33,14 +33,13 @@ const GalleryMobile = () => {
     query ImagesGalleryMobile {
       imagesSmall: allFile(
         filter: { relativeDirectory: { eq: "jpg" } }
-        sort: { fields: name }
         limit: 4
       ) {
         nodes {
           id
           name
           childImageSharp {
-            fluid(quality: 45) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

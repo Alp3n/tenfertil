@@ -9,10 +9,11 @@ const StyledWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 5rem 0;
-  background-color: ${myTheme.color.background};
+  padding: ${props => (props.plain ? "3rem 0 0 0" : "5rem 0")};
+  margin: ${props => (props.plain ? "0" : "2rem 0")};
+  background-color: ${props =>
+    props.plain ? "#ffffff" : myTheme.color.background};
   white-space: pre-wrap;
-  margin: 2rem 0;
 `
 
 const Styled50 = styled.div`
@@ -22,21 +23,26 @@ const Styled50 = styled.div`
 `
 
 const StyledH1 = styled.h1`
+  font-weight: 700;
   font-size: 48px;
+  /* font-family: "Oswald"; */
 `
-const StyledH2 = styled.h2`
-  font-size: 30px;
+const StyledH2 = styled.p`
+  width: 80%;
+  font-size: ${props => (props.plain ? "22px" : "30px")};
+  font-weight: ${props => (props.plain ? "300" : "400")};
 `
 
-const Breaker = ({ children, texts, heading, id }) => {
+const Breaker = ({ texts, heading, id, plain }) => {
   return (
-    <StyledWrapper id={id}>
+    <StyledWrapper id={id} plain={plain}>
       <Styled50>
         <StyledH1>{heading}</StyledH1>
         {texts.map(text => (
-          <StyledH2 key={text}>{text}</StyledH2>
+          <StyledH2 key={text} plain={plain}>
+            {text}
+          </StyledH2>
         ))}
-        {children}
       </Styled50>
     </StyledWrapper>
   )

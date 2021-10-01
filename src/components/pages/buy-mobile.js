@@ -5,6 +5,7 @@ import { online, offline } from "../../content/data/apteki"
 import Product from "../product/product"
 import Button from "../button/button"
 import myTheme from "../../styles/myTheme"
+import Recommendation from "../recommendation"
 import { useTranslation } from "react-i18next"
 
 const StyledWrapper = styled.div`
@@ -32,8 +33,9 @@ const StyledMargin = styled.div`
   margin: 0 auto;
 `
 const StyledH1 = styled.h1`
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
+  /* font-family: "Oswald"; */
   margin: 2rem 0;
 `
 
@@ -46,6 +48,7 @@ const BuyMobile = () => {
   const { t } = useTranslation()
   return (
     <StyledWrapper>
+      <Recommendation />
       <Product width={`300px`} buttonOff />
       <StyledWrapperBreaker>
         <StyledH1>{t("buy.heading")}</StyledH1>
@@ -57,9 +60,8 @@ const BuyMobile = () => {
 
         <StyledH1>{t("buy.stationary")}</StyledH1>
         <List list={offline} offline />
+        <Button to={"/"} label={t("buy.back")} />
       </StyledMargin>
-
-      <Button to={"/"} label={t("buy.back")} />
     </StyledWrapper>
   )
 }

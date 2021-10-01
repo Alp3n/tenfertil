@@ -40,12 +40,20 @@ const StyledTextBox = styled.div`
 `
 
 const StyledHeading = styled.h2`
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 400;
+  /* font-family: "Oswald"; */
   text-transform: uppercase;
+  @media only screen and (max-width: 1200px) {
+    font-size: 22px;
+  }
 `
 const StyledText = styled.p`
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 300;
+  @media only screen and (max-width: 1200px) {
+    font-size: 18px;
+  }
 `
 
 const List = ({ list, online, offline, label }) => {

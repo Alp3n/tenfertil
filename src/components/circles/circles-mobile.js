@@ -29,7 +29,6 @@ const circles = [
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 1.5rem 1.5rem 1.5rem;
   align-items: center;
 `
 
@@ -40,7 +39,8 @@ const StyledCirclesWrapper = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6, 0.6);
 `
 
 const StyledCircle = styled.div`
@@ -69,16 +69,21 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 90%;
+  width: 85%;
 `
 
-const StyledHeader = styled.h2`
+const StyledHeader = styled.h1`
+  font-weight: 400;
   font-size: 22px;
+  /* font-family: "Oswald"; */
   text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
 `
 
 const StyledP = styled.p`
   font-size: 18px;
+  font-weight: 300;
+  margin: 0;
 `
 
 const CirclesMobile = ({ image, text, header }) => {

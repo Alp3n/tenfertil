@@ -12,6 +12,7 @@ const color = {
   button: "#00B4AA",
   "button-hover": "#5EAAA5",
   background: "#E9EDF9",
+  underscore: "#dce3f5",
 }
 
 const typography = {

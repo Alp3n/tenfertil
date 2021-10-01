@@ -7,12 +7,14 @@ import GalleryMobile from "../gallery/gallery-mobile"
 import BreakerMobile from "../breaker/breaker-mobile"
 import TipsMobile from "../circles/tips-mobile"
 import AboutPeopleMobile from "../about/about-people-mobile"
+import Recommendation from "../recommendation"
+import Opinions from "../opinions"
 
 import Logo from "../logo/logo"
 import Product from "../product/product"
 import Button from "../button/button"
 
-import { CgShoppingCart } from "react-icons/cg"
+import { CgShoppingCart, CgChevronUp } from "react-icons/cg"
 import myTheme from "../../styles/myTheme"
 import { Link } from "gatsby"
 
@@ -29,25 +31,30 @@ const StyledMargin = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 24px;
+  margin: 1rem 2rem;
 `
 
 const StyledH1 = styled.h1`
   text-align: center;
+  font-weight: 700;
   font-size: 28px;
+  font-family: "Oswald";
   margin: 2rem 0;
 `
 const StyledH2 = styled.h2`
   font-size: 20px;
+  font-weight: 300;
 `
 
 const StyledP = styled.p`
-  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 8px;
 `
 
 const StyledP2 = styled.p`
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   width: 100%;
 `
 
@@ -66,16 +73,32 @@ const StyledCart = styled(Link)`
   background-color: ${myTheme.color.button};
   z-index: 999;
 `
+const StyledLink = styled(Link)`
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: calc(524px - 100px);
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background-color: ${myTheme.color.button};
+  text-decoration: none;
+  z-index: 999;
+`
 
 const HomeDesktop = () => {
   const { t } = useTranslation()
   return (
     <>
       <GalleryMobile />
-
+      <Recommendation />
       <StyledCart to={"/buy"}>
         <CgShoppingCart size="24px" color={myTheme.color.white} />
       </StyledCart>
+      <StyledLink to={"/"}>
+        <CgChevronUp size={`24px`} color={`white`} />
+      </StyledLink>
 
       <StyledWrapper>
         <Logo width="280px" />
@@ -105,7 +128,7 @@ const HomeDesktop = () => {
         <StyledMargin>
           <List list={t("facts")} />
         </StyledMargin>
-
+        <Recommendation />
         <div style={{ marginTop: "30px" }}>
           <Product width="300px" />
         </div>
@@ -117,10 +140,12 @@ const HomeDesktop = () => {
         />
 
         <TipsMobile list={t("tips")} />
-
+        <Recommendation marginTop />
+        <Opinions opinions={t("opinions").map(opinion => opinion)} />
         <BreakerMobile
           heading={t("breakerNhi.heading")}
           texts={t("breakerNhi.texts")}
+          plain={true}
         />
 
         <AboutPeopleMobile people={t("people")} label={t("learnMore")} />

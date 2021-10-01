@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import myTheme from "../../styles/myTheme"
-// import LogoCss from "../logo/logo-css"
+import LogoCss from "../logo/logo-css"
 import { CgSmartphone, CgMail } from "react-icons/cg"
-import LogoNhi from "../logo/logo-nhi"
+// import LogoNhi from "../logo/logo-nhi"
 
 const StyledFooterWrapper = styled.footer`
   display: flex;
@@ -31,6 +31,7 @@ const StyledContactWrapper = styled.div`
 const StyledContactText = styled.div`
   display: flex;
   align-items: center;
+  gap: 1rem;
 `
 const StyledText = styled.p`
   padding-left: 1rem;
@@ -41,8 +42,8 @@ const FooterDesktop = ({ number, email, company }) => {
   return (
     <StyledFooterWrapper id="footer">
       <StyledContent>
-        {/* <LogoCss companyName={`Nutrition Health Institute`} /> */}
-        <LogoNhi width="50%" />
+        <LogoCss companyName={`Nutrition Health Institute`} />
+        {/* <LogoNhi width="30%" /> */}
         <StyledInfoWrapper>
           <StyledContactWrapper>
             <StyledContactText>

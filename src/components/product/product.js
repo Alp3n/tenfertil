@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next"
 const StyledImg = styled(Img)`
   margin-bottom: 4vh;
   min-width: ${props => props.width};
+  left: 30px;
 `
 
 const StyledWrapper = styled.div`
@@ -15,6 +16,10 @@ const StyledWrapper = styled.div`
   max-height: auto;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 700px) {
+    margin-top: 5%;
+  }
 `
 
 const Product = ({ width, height, buttonOff, isVN }) => {

@@ -9,22 +9,50 @@ import Tips from "../circles/tips"
 import LeftBorderP from "../paragraph/left-border-paragraph"
 import AboutTenfertil from "../about/about-tenfertil"
 import AboutPeople from "../about/about-people"
+import Recommendation from "../recommendation"
+import Opinions from "../opinions"
+import myTheme from "../../styles/myTheme"
+import { CgChevronUp } from "react-icons/cg"
 import { useTranslation } from "react-i18next"
+import { Link } from "gatsby"
 
 const StyledGalleryWrapper = styled.div`
   width: 55%;
-  padding-right: 5%;
-  z-index: 999;
+  padding: 1.1rem 5% 0 0;
+  z-index: 99;
 `
 const Styled50 = styled.div`
   width: 55%;
   z-index: 999;
+`
+const StyledLink = styled(Link)`
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background-color: ${myTheme.color.button};
+  text-decoration: none;
+  z-index: 9999;
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
 const HomeDesktop = () => {
   const { t } = useTranslation()
   return (
     <>
+      <StyledLink to={"/"}>
+        <CgChevronUp size={`24px`} color={`white`} />
+      </StyledLink>
+
+      <Recommendation />
+
       <StyledGalleryWrapper>
         <GalleryDesktop />
       </StyledGalleryWrapper>
@@ -57,9 +85,11 @@ const HomeDesktop = () => {
       <Styled50>
         <Tips list={t("tips")} width="260px" />
       </Styled50>
+      <Opinions opinions={t("opinions").map(opinion => opinion)} />
       <Breaker
         heading={t("breakerNhi.heading")}
         texts={t("breakerNhi.texts")}
+        plain={true}
       />
       <Styled50>
         <AboutPeople people={t("people")} label={t("learnMore")} />

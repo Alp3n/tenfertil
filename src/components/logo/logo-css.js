@@ -6,7 +6,7 @@ const circles = [
   {
     color: myTheme.color["blue-2"],
     top: "-1px",
-    left: "-3px",
+    left: "-2px",
   },
   {
     color: myTheme.color["blue-3"],
@@ -16,7 +16,7 @@ const circles = [
   {
     color: myTheme.color["blue-4"],
     top: "1px",
-    left: "3px",
+    left: "2px",
   },
 ]
 
@@ -24,12 +24,21 @@ const StyledIconWrapper = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 32px;
+
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 16px;
+  }
 `
 const StyledCircleWrapper = styled.div`
   position: relative;
   width: 35px;
   height: 30px;
   margin-right: 8px;
+  top: 2px;
+  @media only screen and (max-width: 700px) {
+    top: 5px;
+  }
 `
 
 const StyledCircle = styled.div`
@@ -41,11 +50,21 @@ const StyledCircle = styled.div`
   position: absolute;
   top: ${props => props.top};
   left: ${props => props.left};
+  @media only screen and (max-width: 700px) {
+    width: 20px;
+    height: 20px;
+  }
 `
 
 const StyledText = styled.span`
   color: ${myTheme.color["blue-4"]};
-  font-size: 1.3rem;
+  font-weight: 300;
+  font-size: 30px;
+  font-stretch: condensed;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 20px;
+  }
 `
 
 const LogoCss = ({ companyName }) => {

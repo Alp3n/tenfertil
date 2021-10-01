@@ -28,13 +28,6 @@ const AboutPeople = ({ people, label }) => {
           }
         }
       }
-      wolski: file(relativePath: { eq: "portrait/p3wolski.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
   return (
@@ -50,11 +43,11 @@ const AboutPeople = ({ people, label }) => {
           text={people.grodzicka.titles}
           header={people.grodzicka.name}
         />
-        <PersonPortrait
+        {/* <PersonPortrait
           image={data.wolski.childImageSharp.fluid}
           text={people.wolski.titles}
           header={people.wolski.name}
-        />
+        /> */}
       </StyledWrapper>
       <div style={{ marginTop: `90px` }}>
         <Button href={`https://www.nhinstitute.pl`} label={label} />

@@ -29,12 +29,14 @@ const circles = [
 
 const StyledPortraitWrapper = styled.div`
   display: flex;
-  height: 250px;
-  width: 250px;
+  height: 210px;
+  width: 210px;
   position: relative;
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
 `
 
 const StyledPortrait = styled(Img)`
@@ -64,18 +66,22 @@ const StyledContent = styled.div`
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 1.5rem 1rem 1.5rem;
+  /* margin: 1rem 1.5rem 1rem 1.5rem; */
   /* margin-bottom: 30px; */
   align-items: center;
 `
 
-const StyledHeader = styled.h2`
-  font-size: 22px;
+const StyledHeader = styled.p`
+  /* font-weight: 700; */
+  font-size: 21px;
+  font-weight: 400;
+  /* font-family: "Oswald"; */
   text-transform: uppercase;
 `
 
 const StyledP = styled.p`
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
 `
 
 const PersonPortraitMobile = ({ image, header, text }) => {

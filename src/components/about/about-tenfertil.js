@@ -8,18 +8,22 @@ const StyledWrapper = styled.div`
 `
 
 const StyledLogoWrapper = styled.div`
-  width: 33rem;
+  width: 70%;
   margin-bottom: 1rem;
 `
 
-const StyledH2 = styled.h3`
+const StyledH2 = styled.h2`
   font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
   width: 70%;
 `
 
 const StyledP = styled.p`
-  font-size: 16px;
-  width: 70%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  width: 60%;
 `
 
 const AboutTenfertil = ({ heading, paragraph, buttonLabel, to }) => {

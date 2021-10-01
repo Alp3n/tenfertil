@@ -13,7 +13,7 @@ const ImageLogo = props => {
     query {
       imageLogoSmall: file(name: { eq: "logo-small" }) {
         childImageSharp {
-          fluid(quality: 50) {
+          fluid(quality: 80) {
             ...GatsbyImageSharpFluid
           }
         }

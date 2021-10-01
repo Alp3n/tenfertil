@@ -57,8 +57,12 @@ export const offline = [
     address: "Puławska 395, 02-807 Warszawa",
   },
   {
-    name: "klinika anclara",
-    address: "Puławska 136/61, 02-624 Warszawa",
+    name: "Apteka Kliniczna",
+    address: "Krucza 51, 00-022 Warszawa",
+  },
+  {
+    name: "Farmacja I Uroda",
+    address: "Aleja Krakowska 110/114, 02-275 Warszawa",
   },
   {
     name: "CMS CODE Centrum Medyczne",
@@ -67,5 +71,17 @@ export const offline = [
   {
     name: "apteka avena 6",
     address: "Patriotów 4, 09-409 Płock",
+  },
+  {
+    name: "Apteka Dr. Max",
+    address: "Plac Zwycięstwa 1, 70-233 Szczecin",
+  },
+  {
+    name: "Apteka Natura",
+    address: "Tatarakowa 28, 20-541 Lublin",
+  },
+  {
+    name: "Apteka Magnolia",
+    address: "Ruska 15C, 20-126 Lublin",
   },
 ]
