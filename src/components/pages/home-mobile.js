@@ -38,7 +38,7 @@ const StyledH1 = styled.h1`
   text-align: center;
   font-weight: 700;
   font-size: 28px;
-  font-family: "Oswald";
+  /* font-family: "Lato"; */
   margin: 2rem 0;
 `
 const StyledH2 = styled.h2`

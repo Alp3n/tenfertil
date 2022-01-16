@@ -32,8 +32,7 @@ const AboutPeopleMobile = ({ people, label }) => {
 
   return (
     <StyledWrapper>
-      
-        <PersonPortraitMobile
+      {/*         <PersonPortraitMobile
        key={people.rokicki.id}
        image={data.rokicki.childImageSharp.fluid}
        text={people.rokicki.titles}
@@ -44,7 +43,7 @@ const AboutPeopleMobile = ({ people, label }) => {
         image={data.grodzicka.childImageSharp.fluid}
         text={people.grodzicka.titles}
         header={people.grodzicka.name}
-      />
+      /> */}
 
       <Button href={`https://www.nhinstitute.pl`} label={label} />
     </StyledWrapper>
